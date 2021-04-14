@@ -24,32 +24,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
             android:text="Pemesanan Sayur"
             android:textColor="#DF5000"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
             android:text="Lebih Efisien Sekarang!"
             android:textColor="#DF5000"
-            android:textSize="28dp"
+            android:textSize="25dp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
             android:text="Mulai pesanan sayur dengan berbagai"
             android:textColor="#000000"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
             android:text="macam jenis dan 100% organik"
             android:textColor="#000000"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -63,6 +67,7 @@
         <Button
             android:id="@+id/btn_prosesLogin"
             android:textColor="#ffffff"
+            android:fontFamily="@font/poppins_regular"
             android:background="@drawable/bg_btn_login2"
             android:layout_marginTop="10dp"
             android:layout_width="170dp"
