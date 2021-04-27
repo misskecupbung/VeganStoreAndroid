@@ -49,7 +49,7 @@ class AdapterKeranjang(var activity: Activity, var data: ArrayList<Produk>, var 
     override fun onBindViewHolder(holder: Holder, position: Int) {
 
         val produk = data[position]
-        val harga = Integer.valueOf(produk.harga)
+        val harga = Integer.valueOf(produk.price)
 
         holder.tvNama.text = produk.name
         holder.tvHarga.text = Helper().gantiRupiah(harga * produk.jumlah)

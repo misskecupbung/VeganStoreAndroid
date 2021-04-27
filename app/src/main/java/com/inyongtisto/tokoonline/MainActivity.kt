@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity() {
     private val fragmentHome: Fragment = HomeFragment()
     private val fragmentKeranjang: Fragment = KeranjangFragment()
     private var fragmentAkun: Fragment = AkunFragment()
+
     private val fm: FragmentManager = supportFragmentManager
+
     private var active: Fragment = fragmentHome
 
     private lateinit var menu: Menu

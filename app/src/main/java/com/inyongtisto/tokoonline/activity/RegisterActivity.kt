@@ -79,7 +79,7 @@ class RegisterActivity : AppCompatActivity() {
                     finish()
                     Toast.makeText(this@RegisterActivity, "Selamat datang " + respon.user.name, Toast.LENGTH_SHORT).show()
                 } else {
-                    Toast.makeText(this@RegisterActivity, "Error:" + respon.message, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@RegisterActivity, "Error:" + respon.Message, Toast.LENGTH_SHORT).show()
                 }
             }
         })

@@ -1,18 +1,15 @@
 package com.inyongtisto.tokoonline.fragment
 
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
-import com.inyongtisto.tokoonline.MainActivity
 
 import com.inyongtisto.tokoonline.R
 import com.inyongtisto.tokoonline.adapter.AdapterProduk
@@ -20,7 +17,6 @@ import com.inyongtisto.tokoonline.adapter.AdapterSlider
 import com.inyongtisto.tokoonline.app.ApiConfig
 import com.inyongtisto.tokoonline.model.Produk
 import com.inyongtisto.tokoonline.model.ResponModel
-import kotlinx.android.synthetic.main.activity_login.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -30,49 +26,67 @@ import retrofit2.Response
  */
 class HomeFragment : Fragment() {
 
-    lateinit var vpSlider: ViewPager
+
     lateinit var rvProduk: RecyclerView
-    lateinit var rvProdukTerlasir: RecyclerView
-    lateinit var rvElektronik: RecyclerView
+    lateinit var rvKategori: RecyclerView
+
+//    lateinit var vpSlider: ViewPager
+//    lateinit var rvProdukTerlasir: RecyclerView
+//    lateinit var rvElektronik: RecyclerView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view: View = inflater.inflate(R.layout.fragment_home, container, false)
         init(view)
+
+        getKategori()
+
         getProduk()
 
         return view
     }
 
+    private fun getKategori() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
     fun displayProduk() {
         Log.d("cekini", "size:" + listProduk.size)
-        val arrSlider = ArrayList<Int>()
-        arrSlider.add(R.drawable.slider1)
-        arrSlider.add(R.drawable.slider2)
-        arrSlider.add(R.drawable.slider3)
 
-        val adapterSlider = AdapterSlider(arrSlider, activity)
-        vpSlider.adapter = adapterSlider
+//        val arrSlider = ArrayList<Int>()
+//        arrSlider.add(R.drawable.slider1)
+//        arrSlider.add(R.drawable.slider2)
+//        arrSlider.add(R.drawable.slider3)
 
-        val layoutManager = LinearLayoutManager(activity)
-        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
+//        val adapterSlider = AdapterSlider(arrSlider, activity)
+//        vpSlider.adapter = adapterSlider
 
-        val layoutManager2 = LinearLayoutManager(activity)
-        layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
+        val layoutManagerProduct = LinearLayoutManager(activity)
+        layoutManagerProduct.orientation = LinearLayoutManager.VERTICAL
 
-        val layoutManager3 = LinearLayoutManager(activity)
-        layoutManager3.orientation = LinearLayoutManager.HORIZONTAL
+        val layoutManagerKategori = LinearLayoutManager(activity)
+        layoutManagerKategori.orientation = LinearLayoutManager.HORIZONTAL
+
+//        val layoutManager2 = LinearLayoutManager(activity)
+//        layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
+
+//        val layoutManager3 = LinearLayoutManager(activity)
+//        layoutManager3.orientation = LinearLayoutManager.HORIZONTAL
+
+        rvKategori.adapter = AdapterProduk(requireActivity(), listProduk)
+        rvKategori.layoutManager = layoutManagerKategori
 
         rvProduk.adapter = AdapterProduk(requireActivity(), listProduk)
-        rvProduk.layoutManager = layoutManager
+        rvProduk.layoutManager = layoutManagerProduct
 
-        rvProdukTerlasir.adapter = AdapterProduk(requireActivity(), listProduk)
-        rvProdukTerlasir.layoutManager = layoutManager2
+//        rvProdukTerlasir.adapter = AdapterProduk(requireActivity(), listProduk)
+//        rvProdukTerlasir.layoutManager = layoutManager2
 
-        rvElektronik.adapter = AdapterProduk(requireActivity(), listProduk)
-        rvElektronik.layoutManager = layoutManager3
+//        rvElektronik.adapter = AdapterProduk(requireActivity(), listProduk)
+//        rvElektronik.layoutManager = layoutManager3
     }
 
     private var listProduk: ArrayList<Produk> = ArrayList()
+
     fun getProduk() {
         ApiConfig.instanceRetrofit.getProduk().enqueue(object : Callback<ResponModel> {
             override fun onFailure(call: Call<ResponModel>, t: Throwable) {
@@ -94,10 +108,11 @@ class HomeFragment : Fragment() {
     }
 
     fun init(view: View) {
-        vpSlider = view.findViewById(R.id.vp_slider)
+        //vpSlider = view.findViewById(R.id.vp_slider)
+        rvKategori = view.findViewById(R.id.rv_category)
         rvProduk = view.findViewById(R.id.rv_produk)
-        rvProdukTerlasir = view.findViewById(R.id.rv_produkTerlasir)
-        rvElektronik = view.findViewById(R.id.rv_elektronik)
+        //rvProdukTerlasir = view.findViewById(R.id.rv_produkTerlasir)
+        //rvElektronik = view.findViewById(R.id.rv_elektronik)
     }
 
 //    val arrProduk: ArrayList<Produk>get(){

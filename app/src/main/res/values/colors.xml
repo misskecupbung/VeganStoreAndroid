@@ -7,9 +7,26 @@
     <color name="colorPrimarySoft">#204DBE</color>
 
     <color name="orange">#FF9800</color>
-    <color name="fab70a">#fab70a</color>
     <color name="white">#FFFFFF</color>
 
     <color name="dark">#121931</color>
     <color name="biru">#0099FF</color>
+
+<!--  Vegan Store Color  -->
+    <color name="colorPrimaryVegan">#14BC10</color>
+    <color name="colorBackgroundVegan">#F9F9F9</color>>
+    <color name="colorSecondVegan">#FAB70A</color>
+    <color name="colorFontVeganGreen">#3C780C</color>
+    <color name="colorFontVeganGrey">#C4C4C4</color>
+    <color name="colorButtonDisableVegan">#B2B2B2</color>
+    <color name="colorBottomMenuVegan">#F0F0F0</color>
+
+
+
+
+
+
+
+
+
 </resources>

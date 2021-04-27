@@ -24,14 +24,16 @@ import java.text.NumberFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
-class AdapterProduk(var activity: Activity, var data: ArrayList<Produk>) : RecyclerView.Adapter<AdapterProduk.Holder>() {
+class AdapterProduk(var activity: Activity, var data: ArrayList<Produk>) :
+    RecyclerView.Adapter<AdapterProduk.Holder>() {
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
         val tvNama = view.findViewById<TextView>(R.id.tv_nama)
         val tvHarga = view.findViewById<TextView>(R.id.tv_harga)
-        val tvHargaAsli = view.findViewById<TextView>(R.id.tv_hargaAsli)
+        val tvDeskripsi = view.findViewById<TextView>(R.id.tv_deskripsi)
+        val tvSatuan = view.findViewById<TextView>(R.id.tv_satuan)
         val imgProduk = view.findViewById<ImageView>(R.id.img_produk)
-        val layout = view.findViewById<CardView>(R.id.layout)
+        val layout = view.findViewById<CardView>(R.id.layout_product)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -47,17 +49,20 @@ class AdapterProduk(var activity: Activity, var data: ArrayList<Produk>) : Recyc
 
         val a = data[position]
 
-        val hargaAsli = Integer.valueOf(a.harga)
-        var harga = Integer.valueOf(a.harga)
+//        val hargaAsli = Integer.valueOf(a.harga)
+        var harga = Integer.valueOf(a.price)
 
-        if (a.discount != 0){
-            harga -= a.discount
-        }
+//        if (a.discount != 0){
+//            harga -= a.discount
+//        }
 
-        holder.tvHargaAsli.text = Helper().gantiRupiah(hargaAsli)
-        holder.tvHargaAsli.paintFlags = holder.tvHargaAsli.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+
+//        holder.tvHargaAsli.text = Helper().gantiRupiah(harga)
+//        holder.tvHargaAsli.paintFlags = holder.tvHargaAsli.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
         holder.tvNama.text = data[position].name
         holder.tvHarga.text = Helper().gantiRupiah(harga)
+        holder.tvDeskripsi.text = data[position].description
+        holder.tvSatuan.text = data[position].typeunit
 //        holder.imgProduk.setImageResource(data[position].image)
         val image = Config.productUrl + data[position].image
         Picasso.get()

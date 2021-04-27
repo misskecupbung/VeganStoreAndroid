@@ -53,7 +53,7 @@ class DetailProdukActivity : AppCompatActivity() {
             for (note: Produk in listData) {
                 println("-----------------------")
                 println(note.name)
-                println(note.harga)
+                println(note.price)
             }
         }
 
@@ -103,8 +103,8 @@ class DetailProdukActivity : AppCompatActivity() {
 
         // set Value
         tv_nama.text = produk.name
-        tv_harga.text = Helper().gantiRupiah(produk.harga)
-        tv_deskripsi.text = produk.deskripsi
+        tv_harga.text = Helper().gantiRupiah(produk.price)
+        tv_deskripsi.text = produk.description
 
         val img = Config.productUrl + produk.image
         Picasso.get()

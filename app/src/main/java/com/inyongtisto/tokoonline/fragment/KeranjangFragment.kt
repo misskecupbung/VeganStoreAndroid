@@ -67,7 +67,7 @@ class KeranjangFragment : Fragment() {
         var isSelectedAll = true
         for (produk in listProduk) {
             if (produk.selected) {
-                val harga = Integer.valueOf(produk.harga)
+                val harga = Integer.valueOf(produk.price)
                 totalHarga += (harga * produk.jumlah)
             } else {
                 isSelectedAll = false

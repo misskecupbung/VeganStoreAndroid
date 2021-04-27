@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
                     finish()
                     Toast.makeText(this@LoginActivity, "Selamat datang "+respon.user.name, Toast.LENGTH_SHORT).show()
                 } else{
-                    Toast.makeText(this@LoginActivity, "Error:"+respon.message, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, "Error:"+respon.Message, Toast.LENGTH_SHORT).show()
                 }
             }
         })

@@ -2,9 +2,13 @@ package com.inyongtisto.tokoonline.model
 
 class ResponModel {
     var success = 0
-    lateinit var message: String
+    var Status = "Failed"
+
+    lateinit var Message: String
+
     var user = User()
-    var produks: ArrayList<Produk> = ArrayList()
+    var Products: ArrayList<Produk> = ArrayList()
+    var Categories : ArrayList<Kategori> = ArrayList()
 
     var rajaongkir = ModelAlamat()
 

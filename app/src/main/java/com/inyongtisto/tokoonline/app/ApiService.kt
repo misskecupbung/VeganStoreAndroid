@@ -25,8 +25,26 @@ interface ApiService {
             @Field("password") password: String
     ): Call<ResponModel>
 
-    @GET("produk")
+//    Product
+//      Get All
+    @GET("product")
     fun getProduk(): Call<ResponModel>
+//      Search
+    @GET("product/search/{keyword}")
+    fun getSearchProduk(
+        @Path(value="keyword") keyword: String
+    ): Call<ResponModel>
+//      Category
+    @GET("product/category/{category}")
+    fun getCategoryChoose(
+        @Path(value="category") category: String
+    ): Call<ResponModel>
+
+//    Category
+//      Get Category
+    @GET("category")
+    fun getKategori(): Call<ResponModel>
+
 
     @GET("province")
     fun getProvinsi(
