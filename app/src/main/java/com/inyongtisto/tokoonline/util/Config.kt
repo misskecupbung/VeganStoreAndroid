@@ -5,5 +5,6 @@ package com.inyongtisto.tokoonline.util
  */
 object Config {
     const val baseUrl = "http://salty-citadel-56632.herokuapp.com/"
-    const val productUrl = baseUrl + "storage/produk/"
+    const val productUrl = baseUrl + "products/"
+    const val categoryUrl = baseUrl + "categories/"
 }
