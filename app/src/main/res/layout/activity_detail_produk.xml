@@ -32,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
                     android:background="@color/white"
-                    android:src="@drawable/hp_pavilion_13_an0006na" />
+                    android:src="@drawable/produk_kentang" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -49,20 +49,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
-                            android:layout_toLeftOf="@+id/btn_share"
                             android:ellipsize="marquee"
                             android:maxLines="3"
                             android:text="Nama Produk "
-                            android:textColor="@color/colorPrimary"
+                            android:textColor="@color/colorFontVeganGreen"
                             android:textSize="20dp" />
 
-                        <ImageView
-                            android:id="@+id/btn_share"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            app:srcCompat="@drawable/ic_baseline_share_24" />
 
                     </RelativeLayout>
 
@@ -72,7 +64,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Rp.0"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/dark"
                         android:textSize="16dp"
                         android:textStyle="bold" />
 
@@ -89,18 +81,6 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="SKU"
-                                android:textColor="@color/colorPrimaryDark" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="L99ASD844"
-                                android:textColor="#657191"
-                                android:textSize="13dp" />
 
                         </LinearLayout>
 
@@ -126,7 +106,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Berat"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:textColor="@color/dark" />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -161,7 +141,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Stok"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:textColor="@color/dark" />
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -175,24 +155,6 @@
                         </LinearLayout>
 
                     </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="30dp"
-                        android:text="Pembelian dalam jumlah besar hubungi"
-                        android:textColor="@color/dark"
-                        android:textSize="13dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="10dp"
-                        android:text="imtisto@gmail.com"
-                        android:textColor="@color/biru"
-                        android:textSize="13dp" />
 
                 </LinearLayout>
 
@@ -215,7 +177,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="15dp"
-                    android:text="Pembelian dalam jumlah besar hubungi"
+                    android:text="Kentang asli surabaya, ready stock setiap saat"
                     android:textColor="@color/dark"
                     android:textSize="13dp" />
 

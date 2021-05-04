@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark" />
+            android:background="@color/colorPrimaryVegan" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,38 +44,6 @@
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/ic_profile" />
-
-            <TextView
-                android:id="@+id/tv_nama"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:text="Nama User"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/tv_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:gravity="center"
-                android:text="Nomor Telp"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/tv_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:gravity="center"
-                android:text="Email"
-                android:textColor="@color/white" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
