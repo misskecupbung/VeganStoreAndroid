@@ -4,14 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/colorBackgroundSignIn"
     tools:context=".activity.BaruActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/bg_signin_signup"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginHorizontal="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white"
         android:orientation="vertical"
         android:paddingHorizontal="15dp">
 
@@ -43,10 +52,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@null"
+                        android:fontFamily="@font/poppins_regular"
                         android:hint="Nama Lengkap"
                         android:inputType="text"
                         android:maxLines="1"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:textSize="15sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,10 +98,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@null"
+                        android:fontFamily="@font/poppins_regular"
                         android:hint="Email"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:textSize="15sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -131,10 +144,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@null"
+                        android:fontFamily="@font/poppins_regular"
                         android:hint="Nomor Telepon"
                         android:inputType="phone"
                         android:maxLines="1"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:textSize="15sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -176,10 +191,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@null"
+                        android:fontFamily="@font/poppins_regular"
                         android:hint="Password"
                         android:inputType="textPassword"
                         android:maxLines="1"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:textSize="15sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -198,58 +215,21 @@
             android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/bg_btn_login1"
+            android:fontFamily="@font/poppins_bold"
             android:text="Register"
+            android:textAllCaps="false"
             android:textColor="@color/white" />
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="25dp"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:orientation="horizontal">
 
-            <View
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="1dp"
-                android:background="#CACACA" />
-
-            <TextView
-                android:layout_marginHorizontal="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="atau masuk dengan"/>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="1dp"
-                android:background="#CACACA" />
 
         </LinearLayout>
 
-        <RelativeLayout
-            android:id="@+id/btn_google"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/bg_btn_google"
-            android:padding="13dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                app:srcCompat="@drawable/ic_google"/>
-
-            <TextView
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Google"
-                android:textColor="@color/dark"/>
-
-        </RelativeLayout>
 
     </LinearLayout>
 

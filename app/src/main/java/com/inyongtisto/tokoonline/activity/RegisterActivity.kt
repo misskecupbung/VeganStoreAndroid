@@ -29,9 +29,7 @@ class RegisterActivity : AppCompatActivity() {
             register()
         }
 
-        btn_google.setOnClickListener {
-            dataDummy()
-        }
+
     }
 
     fun dataDummy() {

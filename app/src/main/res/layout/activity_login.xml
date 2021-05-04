@@ -4,30 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/colorBackgroundSignIn"
     tools:context=".activity.BaruActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_signin_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="50dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="340dp"
         android:orientation="vertical"
-        android:paddingHorizontal="15dp">
+        android:paddingHorizontal="15dp"
+        android:background="@color/white">
 
         <TextView
-            android:textColor="@color/biru"
-            android:textStyle="bold"
-            android:textSize="25dp"
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selamat Datang"/>
+            android:layout_marginTop="20dp"
+            android:text="Sign In"
+            android:textColor="@color/colorPrimaryVegan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            />
 
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -54,8 +65,10 @@
                         android:layout_height="40dp"
                         android:background="@null"
                         android:hint="Email"
+                        android:fontFamily="@font/poppins_regular"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
+                        android:textSize="15sp"
                         android:singleLine="true" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -73,8 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <LinearLayout
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -101,6 +113,8 @@
                         android:hint="Password"
                         android:inputType="textPassword"
                         android:maxLines="1"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
                         android:singleLine="true" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -112,27 +126,48 @@
                 android:layout_height="1dp"
                 android:background="#CACACA" />
 
+
         </LinearLayout>
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:background="@drawable/bg_btn_login1"
             android:text="Login"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18sp"
             android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/btn_lupaPassword"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lupa Password?"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Belum punya akun?"
+            android:fontFamily="@font/poppins_regular"/>
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/colorPrimaryVegan"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold" />
 
+   </LinearLayout>
     <ProgressBar
         android:visibility="gone"
         android:id="@+id/pb"
