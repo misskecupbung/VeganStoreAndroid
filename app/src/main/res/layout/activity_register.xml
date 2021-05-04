@@ -19,8 +19,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="50dp"
-        android:background="@color/white"
+        android:background="@drawable/bg_login_register"
         android:orientation="vertical"
         android:paddingHorizontal="15dp">
 
@@ -214,21 +213,13 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/bg_btn_login1"
             android:fontFamily="@font/poppins_bold"
             android:text="Register"
             android:textAllCaps="false"
             android:textColor="@color/white" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="25dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-
-        </LinearLayout>
 
 
     </LinearLayout>

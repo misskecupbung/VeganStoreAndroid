@@ -63,9 +63,9 @@ class AkunFragment : Fragment() {
 
     private fun init(view: View) {
         btnLogout = view.findViewById(R.id.btn_logout)
-        tvNama = view.findViewById(R.id.tv_nama)
+//        tvNama = view.findViewById(R.id.tv_nama)
        // tvEmail = view.findViewById(R.id.tv_email)
-        tvPhone = view.findViewById(R.id.tv_phone)
+//        tvPhone = view.findViewById(R.id.tv_phone)
     }
 
 

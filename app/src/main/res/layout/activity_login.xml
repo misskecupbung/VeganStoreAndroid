@@ -4,175 +4,192 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackgroundSignIn"
     tools:context=".activity.BaruActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bg_signin_signup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginVertical="50dp"
-        />
-
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginVertical="340dp"
-        android:orientation="vertical"
-        android:paddingHorizontal="15dp"
-        android:background="@color/white">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Sign In"
-            android:textColor="@color/colorPrimaryVegan"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/poppins_bold"
-            />
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            android:background="@color/colorBackgroundSignIn">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="50dp"
+                android:src="@drawable/bg_signin_signup" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="340dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:background="@drawable/bg_login_register">
 
-                <ImageView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="10dp"
-                    app:srcCompat="@drawable/ic_email_black_24dp" />
+                    android:layout_marginTop="20dp"
+                    android:text="Sign In"
+                    android:textColor="@color/colorPrimaryVegan"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            app:srcCompat="@drawable/ic_email_black_24dp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edt_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@null"
+                                android:hint="Email"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:textSize="15sp"
+                                android:singleLine="true" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#CACACA" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            app:srcCompat="@drawable/ic_lock_black_24dp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="true">
+
+                            <EditText
+                                android:id="@+id/edt_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@null"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:singleLine="true" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#CACACA" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_btn_login1"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <EditText
-                        android:id="@+id/edt_email"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:background="@null"
-                        android:hint="Email"
-                        android:fontFamily="@font/poppins_regular"
-                        android:inputType="textEmailAddress"
-                        android:maxLines="1"
-                        android:textSize="15sp"
-                        android:singleLine="true" />
 
-                </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
 
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#CACACA" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
+                <TextView
+                    android:id="@+id/btn_lupaPassword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="10dp"
-                    app:srcCompat="@drawable/ic_lock_black_24dp" />
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:text="Belum punya akun?"
+                    android:fontFamily="@font/poppins_regular"/>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:passwordToggleEnabled="true">
-
-                    <EditText
-                        android:id="@+id/edt_password"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:background="@null"
-                        android:hint="Password"
-                        android:inputType="textPassword"
-                        android:maxLines="1"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:singleLine="true" />
-
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:text="Sign Up"
+                    android:textColor="@color/colorPrimaryVegan"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#CACACA" />
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pb"
+                android:layout_centerInParent="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 
-        </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg_btn_login1"
-            android:text="Login"
-            android:textAllCaps="false"
-            android:fontFamily="@font/poppins_bold"
-            android:textSize="18sp"
-            android:textColor="@color/white" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/btn_lupaPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="2dp"
-            android:text="Belum punya akun?"
-            android:fontFamily="@font/poppins_regular"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Sign Up"
-            android:textColor="@color/colorPrimaryVegan"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold" />
-
-   </LinearLayout>
-    <ProgressBar
-        android:visibility="gone"
-        android:id="@+id/pb"
-        android:layout_centerInParent="true"
-        android:layout_width="40dp"
-        android:layout_height="40dp"/>
 
 </RelativeLayout>

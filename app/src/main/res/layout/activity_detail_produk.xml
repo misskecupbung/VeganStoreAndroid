@@ -53,7 +53,9 @@
                             android:maxLines="3"
                             android:text="Nama Produk "
                             android:textColor="@color/colorFontVeganGreen"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"/>
 
 
                     </RelativeLayout>
@@ -65,8 +67,36 @@
                         android:layout_marginTop="10dp"
                         android:text="Rp.0"
                         android:textColor="@color/dark"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Satuan : "
+                            android:textColor="@color/colorFontVeganGrey"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Satuan"
+                            android:textColor="@color/dark"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"/>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -106,14 +136,19 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Berat"
-                                    android:textColor="@color/dark" />
+                                    android:textColor="@color/dark"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_regular"/>
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
                                     android:text="0.2kg"
-                                    android:textColor="#657191"
-                                    android:textSize="13dp" />
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorFontVeganGrey"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_regular"/>
 
                             </LinearLayout>
 
@@ -141,14 +176,19 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Stok"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_regular"
                                     android:textColor="@color/dark" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
                                     android:text="0"
-                                    android:textColor="#657191"
-                                    android:textSize="13dp" />
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorFontVeganGrey"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/poppins_regular"/>
 
                             </LinearLayout>
 

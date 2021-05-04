@@ -13,13 +13,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimaryVegan" />
+            android:layout_weight="2"
+            android:background="@color/colorBackgroundSignIn" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:background="@color/white" />
 
     </LinearLayout>
@@ -42,7 +42,8 @@
                 android:gravity="center"
                 android:text="PROFILE"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="30sp"
+                android:fontFamily="@font/poppins_bold"/>
 
 
             <androidx.cardview.widget.CardView
