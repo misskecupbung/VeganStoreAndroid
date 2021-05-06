@@ -3,6 +3,7 @@ package com.inyongtisto.tokoonline.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.inyongtisto.tokoonline.MainActivity
 import com.inyongtisto.tokoonline.R
 import com.inyongtisto.tokoonline.helper.SharedPref
 import kotlinx.android.synthetic.main.activity_masuk.*
@@ -22,7 +23,7 @@ class MasukActivity : AppCompatActivity() {
 
     private fun mainButton(){
         btn_prosesLogin.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
     }
