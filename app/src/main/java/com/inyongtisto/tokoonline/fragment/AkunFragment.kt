@@ -1,6 +1,7 @@
 package com.inyongtisto.tokoonline.fragment
 
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +15,8 @@ import com.inyongtisto.tokoonline.MainActivity
 
 import com.inyongtisto.tokoonline.R
 import com.inyongtisto.tokoonline.activity.LoginActivity
+import com.inyongtisto.tokoonline.activity.ProductActivity
+import com.inyongtisto.tokoonline.activity.RegisterActivity
 import com.inyongtisto.tokoonline.helper.SharedPref
 
 /**
@@ -35,15 +38,22 @@ class AkunFragment : Fragment() {
         val view: View = inflater.inflate(R.layout.fragment_akun, container, false)
         init(view)
 
-        s = SharedPref(requireActivity())
+        s = SharedPref(requireActivity() as Activity)
 
         btnLogout.setOnClickListener {
             s.setStatusLogin(false)
+            login()
         }
 
         setData()
         return view
     }
+
+    private fun login() {
+        val loginactivity = Intent(activity, LoginActivity::class.java)
+        activity?.startActivity(loginactivity)
+    }
+
 
     fun setData() {
 
@@ -58,14 +68,14 @@ class AkunFragment : Fragment() {
 
         tvNama.text = user.name
         tvEmail.text = user.email
-//        tvPhone.text = user.phone
+        tvPhone.text = user.phone
     }
 
     private fun init(view: View) {
         btnLogout = view.findViewById(R.id.btn_logout)
-//        tvNama = view.findViewById(R.id.tv_nama)
-       // tvEmail = view.findViewById(R.id.tv_email)
-//        tvPhone = view.findViewById(R.id.tv_phone)
+        tvNama = view.findViewById(R.id.tv_nama)
+        tvEmail = view.findViewById(R.id.tv_email)
+        tvPhone = view.findViewById(R.id.tv_phone)
     }
 
 

@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson
+import com.inyongtisto.tokoonline.model.Customer
 import com.inyongtisto.tokoonline.model.User
 
 class SharedPref(activity: Activity) {
@@ -30,8 +31,8 @@ class SharedPref(activity: Activity) {
         return sp.getBoolean(login, false)
     }
 
-    fun setUser(value: User) {
-        val data: String = Gson().toJson(value, User::class.java)
+    fun setUser(value: Customer) {
+        val data: String = Gson().toJson(value, Customer::class.java)
         sp.edit().putString(user, data).apply()
     }
 

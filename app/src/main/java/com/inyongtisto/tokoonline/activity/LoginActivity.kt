@@ -28,6 +28,16 @@ class LoginActivity : AppCompatActivity() {
         btn_login.setOnClickListener {
             login()
         }
+
+        tv_sign_up.setOnClickListener {
+            signUp()
+        }
+
+
+    }
+
+    fun signUp() {
+        startActivity(Intent(this, RegisterActivity::class.java))
     }
 
     fun login() {
@@ -51,9 +61,9 @@ class LoginActivity : AppCompatActivity() {
             override fun onResponse(call: Call<ResponModel>, response: Response<ResponModel>) {
                 pb.visibility = View.GONE
                 val respon = response.body()!!
-                if (respon.success == 1){
+                if (respon.Status == "Success"){
                     s.setStatusLogin(true)
-                    s.setUser(respon.user)
+                    s.setUser(respon.Customer)
 //                    s.setString(s.nama, respon.user.name)
 //                    s.setString(s.phone, respon.user.phone)
 //                    s.setString(s.email, respon.user.email)
@@ -63,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                     finish()
-                    Toast.makeText(this@LoginActivity, "Selamat datang "+respon.user.name, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, "Selamat datang "+respon.Customer.name, Toast.LENGTH_SHORT).show()
                 } else{
                     Toast.makeText(this@LoginActivity, "Error:"+respon.Message, Toast.LENGTH_SHORT).show()
                 }

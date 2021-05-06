@@ -9,8 +9,9 @@ import retrofit2.http.*
 
 interface ApiService {
 
+//    Regitrasi
     @FormUrlEncoded
-    @POST("register")
+    @POST("customer/regristrasi")
     fun register(
             @Field("name") name: String,
             @Field("email") email: String,
@@ -18,8 +19,9 @@ interface ApiService {
             @Field("password") password: String
     ): Call<ResponModel>
 
+//    Login
     @FormUrlEncoded
-    @POST("login")
+    @POST("customer/login")
     fun login(
             @Field("email") email: String,
             @Field("password") password: String
@@ -38,6 +40,14 @@ interface ApiService {
     @GET("product/category/{category}")
     fun getCategoryChoose(
         @Path(value="category") category: String
+    ): Call<ResponModel>
+
+
+    //    Product
+//      Get All
+    @GET("profil/{id}")
+    fun getProfil(
+        @Path(value="keyword") keyword: String
     ): Call<ResponModel>
 
 //    Category

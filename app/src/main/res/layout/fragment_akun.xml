@@ -26,9 +26,6 @@
 
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,44 +45,87 @@
 <!--                android:fontFamily="@font/poppins_bold"/>-->
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo_akun"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/img"
                 />
 
-            <TextView
-                android:id="@+id/tv_nama"
+
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:text="Nama User"
-                android:textSize="20sp"
-                android:textColor="@color/colorFontVeganGreen"
-                android:fontFamily="@font/poppins_bold"/>
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
 
-            <TextView
-                android:id="@+id/tv_email"
+                <TextView
+                    android:id="@+id/tv_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Nama User"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorFontVeganGreen"
+                    android:fontFamily="@font/poppins_bold"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:gravity="center"
-                android:text="Email"
-                android:textSize="20sp"
-                android:textColor="@color/colorFontVeganGreen"
-                android:fontFamily="@font/poppins_bold"/>
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
 
-            <TextView
-                android:id="@+id/tv_phone"
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Email"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorFontVeganGreen"
+                    android:fontFamily="@font/poppins_bold"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:gravity="center"
-                android:text="Nomor Telp"
-                android:textSize="16sp"
-                android:textColor="@color/colorFontVeganGreen"
-                android:fontFamily="@font/poppins_bold"/>
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Nomor Telp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorFontVeganGreen"
+                    android:fontFamily="@font/poppins_bold"/>
+
+            </androidx.cardview.widget.CardView>
+
 
 
             <ScrollView
@@ -102,7 +142,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="1dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="2dp"
                         app:cardElevation="10dp">
 
@@ -290,7 +330,7 @@
                                     <ImageView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+                                        app:srcCompat="@drawable/ic_baseline_add_shopping_cart_orange" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -476,25 +516,76 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:layout_marginTop="25dp"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:id="@+id/btn_logout"
-                        android:layout_width="wrap_content"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="Log out"/>
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="2dp"
+                        app:cardElevation="10dp">
 
-                    <TextView
-                        android:textSize="12dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/logout" />
+
+                                    <TextView
+                                        android:id="@+id/btn_logout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="Log Out"
+                                        android:textColor="@color/colorPrimaryDark" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="Verison 1.0.0"/>
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="20dp">
+
+
+                        <TextView
+                            android:textSize="12dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Verison 1.0.0"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
+
+
 
 
 
@@ -503,6 +594,5 @@
 
         </LinearLayout>
 
-    </ScrollView>
 
 </RelativeLayout>

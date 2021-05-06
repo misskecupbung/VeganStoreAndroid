@@ -19,7 +19,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="true"
                 android:background="@drawable/bg_signin_signup"/>
 
             <LinearLayout
@@ -228,7 +230,6 @@
                     android:text="Register"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
-
 
 
             </LinearLayout>
