@@ -12,9 +12,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.inyongtisto.tokoonline.activity.LoginActivity
 import com.inyongtisto.tokoonline.activity.MasukActivity
 import com.inyongtisto.tokoonline.fragment.AkunFragment
+import com.inyongtisto.tokoonline.fragment.HistoryFragment
 import com.inyongtisto.tokoonline.fragment.HomeFragment
 import com.inyongtisto.tokoonline.fragment.KeranjangFragment
 import com.inyongtisto.tokoonline.helper.SharedPref
@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private val fragmentHome: Fragment = HomeFragment()
     private val fragmentKeranjang: Fragment = KeranjangFragment()
     private var fragmentAkun: Fragment = AkunFragment()
+    private var fragmentHistory: Fragment = HistoryFragment()
 
     private val fm: FragmentManager = supportFragmentManager
 
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         fm.beginTransaction().add(R.id.container, fragmentHome).show(fragmentHome).commit()
         fm.beginTransaction().add(R.id.container, fragmentKeranjang).hide(fragmentKeranjang).commit()
         fm.beginTransaction().add(R.id.container, fragmentAkun).hide(fragmentAkun).commit()
+        fm.beginTransaction().add(R.id.container, fragmentHistory).hide(fragmentHistory).commit()
 
         bottomNavigationView = findViewById(R.id.nav_view)
         menu = bottomNavigationView.menu
@@ -81,7 +83,13 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         startActivity(Intent(this, MasukActivity::class.java))
                     }
-
+                }
+                R.id.navigation_transaksi -> {
+                    if (s.getStatusLogin()) {
+                        callFargment(3, fragmentHistory)
+                    } else {
+                        startActivity(Intent(this, MasukActivity::class.java))
+                    }
                 }
             }
 
