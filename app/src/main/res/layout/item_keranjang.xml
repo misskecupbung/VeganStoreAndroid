@@ -18,7 +18,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="199dp"
             android:orientation="horizontal">
 
             <CheckBox
@@ -40,10 +40,13 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="5dp"
                 android:ellipsize="marquee"
+                android:fontFamily="@font/poppins_regular"
                 android:lines="2"
                 android:maxLines="3"
                 android:text="Nama Produk"
                 android:textColor="@color/colorPrimary" />
+
+
 
         </LinearLayout>
 
@@ -51,6 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
+
+
 
             <ImageView
                 android:id="@+id/btn_delete"
