@@ -7,4 +7,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--kota/sektor pengiriman-->
+    <string-array name="Sektor">
+        <item>Tegal</item>
+        <item>Kebumen</item>
+        <item>Garut</item>
+        <item>Purwokerto</item>
+    </string-array>
 </resources>

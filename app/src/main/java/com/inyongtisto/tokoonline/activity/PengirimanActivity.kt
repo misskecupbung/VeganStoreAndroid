@@ -17,6 +17,7 @@ import com.inyongtisto.tokoonline.model.rajaongkir.Costs
 import com.inyongtisto.tokoonline.model.rajaongkir.ResponOngkir
 import com.inyongtisto.tokoonline.room.MyDatabase
 import com.inyongtisto.tokoonline.util.ApiKey
+import kotlinx.android.synthetic.main.activity_list_alamat.*
 import kotlinx.android.synthetic.main.activity_pengiriman.*
 import kotlinx.android.synthetic.main.toolbar.*
 import retrofit2.Call
@@ -48,18 +49,7 @@ class PengirimanActivity : AppCompatActivity() {
 
         val adapter = ArrayAdapter<Any>(this, R.layout.item_spinner, arryString.toTypedArray())
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spn_kurir.adapter = adapter
-        spn_kurir.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onNothingSelected(parent: AdapterView<*>?) {
 
-            }
-
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                if (position != 0) {
-                    getOngkir(spn_kurir.selectedItem.toString())
-                }
-            }
-        }
     }
 
     @SuppressLint("SetTextI18n")
