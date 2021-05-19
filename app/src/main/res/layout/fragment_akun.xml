@@ -34,15 +34,6 @@
             android:orientation="vertical"
             android:padding="20dp">
 
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:gravity="center"-->
-<!--                android:text="PROFILE"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:textSize="30sp"-->
-<!--                android:fontFamily="@font/poppins_bold"/>-->
 
             <ImageView
                 android:layout_width="120dp"
@@ -50,7 +41,6 @@
                 android:src="@drawable/logo_akun"
                 android:layout_marginTop="20dp"
                 />
-
 
 
             <androidx.cardview.widget.CardView

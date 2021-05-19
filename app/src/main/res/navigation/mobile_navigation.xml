@@ -22,4 +22,10 @@
         android:name="com.inyongtisto.tokoonline.activity.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_akun" />
+
+    <fragment
+        android:id="@+id/navigation_transaksi"
+        android:label="Transaksi"
+        android:name="com.inyongtisto.tokoonline.activity.ui.notifications.HistoryFragment"
+        tools:layout="@layout/fragment_transaksi" />
 </navigation>
