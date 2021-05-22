@@ -302,7 +302,7 @@
                 android:text="Catatan Pengiriman"
                 android:textColor="@color/colorPrimary"
                 android:textSize="14dp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/poppins_bold" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -316,7 +316,8 @@
                     android:layout_margin="10dp"
                     android:background="@null"
                     android:hint="Catatan untuk penjual(Opsional)"
-                    android:textSize="14dp" />
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppins_regular"/>
 
             </RelativeLayout>
 
@@ -324,6 +325,108 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:text="Berlangganan"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Menjadi Pelanggan Tetap"
+                android:fontFamily="@font/poppins_regular"/>
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="500dp"/>
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Kemasan Produk"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Tidak Menggunakan Plastik"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="485dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Waktu Pengiriman"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_google">
+
+                <EditText
+                    android:id="@+id/tgl_kirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:hint="Tanggal Pengiriman*"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_google">
+                <TextView
+                    android:id="@+id/text_waktukirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:text="Waktu Pengiriman"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppins_regular"/>
+                <Spinner
+                    android:id="@+id/spinner_waktu_kirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Rekap Belanja"
                 android:textColor="@color/colorPrimary"
                 android:textSize="14dp"

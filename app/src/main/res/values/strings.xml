@@ -9,10 +9,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--kota/sektor pengiriman-->
-    <string-array name="Sektor">
+    <string-array name="sektor">
         <item>Tegal</item>
         <item>Kebumen</item>
         <item>Garut</item>
         <item>Purwokerto</item>
+    </string-array>
+
+    <!--waktu pengiriman-->
+    <string-array name="waktu_kirim">
+        <item>Pagi Hari (09.30-11.00)</item>
+        <item>Siang Hari (13.00-15.00)</item>
+        <item>Sore Hari (16.00-17.00)</item>
     </string-array>
 </resources>
