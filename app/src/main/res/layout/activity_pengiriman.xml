@@ -253,7 +253,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/product" />
+                        android:src="@drawable/logo_veganstore" />
 
                     <TextView
                         android:id="@+id/produk_nama"
@@ -421,6 +421,7 @@
             </androidx.cardview.widget.CardView>
 
             <Button
+                android:id="@+id/btn_bayar"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_gravity="center_horizontal"
