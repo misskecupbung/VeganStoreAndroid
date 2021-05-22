@@ -13,6 +13,7 @@ import com.inyongtisto.tokoonline.R
 import com.inyongtisto.tokoonline.adapter.AdapterKurir
 import com.inyongtisto.tokoonline.app.ApiConfigAlamat
 import com.inyongtisto.tokoonline.helper.Helper
+import com.inyongtisto.tokoonline.model.ModelAlamat
 import com.inyongtisto.tokoonline.model.rajaongkir.Costs
 import com.inyongtisto.tokoonline.model.rajaongkir.ResponOngkir
 import com.inyongtisto.tokoonline.room.MyDatabase
@@ -25,6 +26,10 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class PengirimanActivity : AppCompatActivity() {
+
+    var provinsi = ModelAlamat.Provinsi()
+    var kota = ModelAlamat.Provinsi()
+    var kecamatan = ModelAlamat()
 
     lateinit var myDb: MyDatabase
     var totalHarga = 0
@@ -73,6 +78,7 @@ class PengirimanActivity : AppCompatActivity() {
             btn_tambahAlamat.text = "Tambah Alamat"
         }
     }
+
 
     private fun mainButton() {
         btn_tambahAlamat.setOnClickListener {
