@@ -13,7 +13,9 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:color="@color/colorPrimaryVegan"
         app:contentInsetStartWithNavigation="0dp"
+        android:background="@color/colorPrimaryVegan"
         app:paddingEnd="5dp"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        />
 
 </com.google.android.material.appbar.AppBarLayout>

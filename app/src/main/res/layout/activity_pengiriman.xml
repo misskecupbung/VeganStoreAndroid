@@ -7,10 +7,23 @@
     android:orientation="vertical"
     tools:context=".activity.BaruActivity">
 
-    <include
-        layout="@layout/toolbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryVegan"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Checkout"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -27,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Alamat Pengiriman"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_bold"/>
@@ -239,7 +252,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Detail Pemesanan"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorBlack"
                     android:textSize="14dp" />
 
                 <LinearLayout
@@ -266,7 +279,7 @@
                         android:lines="2"
                         android:maxLines="3"
                         android:text="Nama Produk"
-                        android:textColor="@color/colorPrimary" />
+                        android:textColor="@color/colorBlack" />
 
 
 
@@ -300,7 +313,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Catatan Pengiriman"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:fontFamily="@font/poppins_bold" />
 
@@ -326,7 +339,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Berlangganan"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:fontFamily="@font/poppins_bold" />
 
@@ -352,7 +365,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Kemasan Produk"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:fontFamily="@font/poppins_bold" />
 
@@ -379,7 +392,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Waktu Pengiriman"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_bold"/>
@@ -453,7 +466,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Total Belanja"
-                            android:textColor="@color/colorPrimary" />
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/poppins_bold"/>
 
                         <TextView
                             android:id="@+id/tv_totalBelanja"
@@ -461,7 +475,8 @@
                             android:layout_height="wrap_content"
                             android:gravity="right"
                             android:text="Rp0"
-                            android:textColor="@color/colorPrimary" />
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/poppins_bold"/>
 
                     </LinearLayout>
 
