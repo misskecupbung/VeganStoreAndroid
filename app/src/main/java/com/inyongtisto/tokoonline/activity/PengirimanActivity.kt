@@ -1,13 +1,21 @@
 package com.inyongtisto.tokoonline.activity
 
 import android.annotation.SuppressLint
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
+import android.os.Build
+import android.os.Build.VERSION
+import android.os.Build.VERSION.SDK_INT
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.inyongtisto.tokoonline.R
 import com.inyongtisto.tokoonline.adapter.AdapterKurir
@@ -31,6 +39,10 @@ class PengirimanActivity : AppCompatActivity() {
     var kota = ModelAlamat.Provinsi()
     var kecamatan = ModelAlamat()
 
+    //notification
+    private val CHANNEL_ID ="channel_id_example_01"
+    private val notificationId =101
+
     lateinit var myDb: MyDatabase
     var totalHarga = 0
 
@@ -40,10 +52,40 @@ class PengirimanActivity : AppCompatActivity() {
         Helper().setToolbar(this, toolbar, "Pengiriman")
         myDb = MyDatabase.getInstance(this)!!
 
+        //notification
+        createNotificationChannel()
+        btn_bayar.setOnClickListener{
+            sendNotification()
+        }
+
         totalHarga = Integer.valueOf(intent.getStringExtra("extra")!!)
         tv_totalBelanja.text = Helper().gantiRupiah(totalHarga)
         mainButton()
         setSepiner()
+    }
+
+    private fun createNotificationChannel(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            val name = "Asik, pesananmu sedang diproses nih!"
+            val descriptionText = "cek kembali pesananmu dikeranjang agar tidak lupa~"
+            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val channel = NotificationChannel(CHANNEL_ID,name,importance).apply {
+                description = descriptionText
+            }
+            val notificationManager: NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.createNotificationChannel(channel)
+        }
+    }
+
+    private fun sendNotification(){
+        val builder = NotificationCompat.Builder(this, CHANNEL_ID)
+            .setSmallIcon(R.drawable.logo_veganstore)
+            .setContentTitle("Example Title")
+            .setContentText("Example Description")
+            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+        with(NotificationManagerCompat.from(this)){
+            notify(notificationId, builder.build())
+        }
     }
 
     fun setSepiner() {
