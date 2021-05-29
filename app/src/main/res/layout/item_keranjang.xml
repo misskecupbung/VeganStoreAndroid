@@ -44,7 +44,7 @@
                 android:fontFamily="@font/poppins_regular"
                 android:lines="2"
                 android:maxLines="3"
-                android:text="Nama Produk"
+                android:text="@string/nama_poduk"
                 android:textColor="@color/colorPrimary" />
 
 

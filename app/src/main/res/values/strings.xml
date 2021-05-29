@@ -125,6 +125,13 @@
     <string name="tambahproduk">Yuk tambah produk yang kamu suka!</string>
     <string name="belanja">Belanja</string>
 
+    <!-- Item Kurir -->
+    <string name="jne_reguler">JNE Reguler</string>
+    <string name="harikerja">3 Hari kerja</string>
+
+    <!-- Item Produk -->
+    <string name="deskripsi">Deskripsi</string>
+
 
 
 </resources>

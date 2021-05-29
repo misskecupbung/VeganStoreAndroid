@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:ellipsize="marquee"
-                    android:text="Nama"
+                    android:text="@string/nama"
                     android:textColor="@color/dark"
                     android:textStyle="bold" />
 
@@ -44,7 +44,7 @@
                     android:id="@+id/tv_phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0812345678"
+                    android:text="@string/nomor_telp2"
                     android:textColor="@color/dark"
                     android:textSize="14dp" />
 
@@ -52,7 +52,7 @@
                     android:id="@+id/tv_alamat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="alamat"
+                    android:text="@string/alamat"
                     android:textColor="@color/dark"
                     android:textSize="14dp" />
 

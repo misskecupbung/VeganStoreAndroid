@@ -28,14 +28,14 @@
                 android:id="@+id/tv_nama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="JNE Reguler"
+                android:text="@string/jne_reguler"
                 android:textColor="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/tv_lamaPengiriman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3 Hari kerja"
+                android:text="@string/harikerja"
                 android:textColor="@color/colorPrimary"
                 android:textSize="10dp" />
 

@@ -43,7 +43,7 @@
                 android:id="@+id/tv_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nama Produk"
+                android:text="@string/nama_poduk"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorFontVeganGreen"
@@ -59,7 +59,7 @@
                 android:id="@+id/tv_deskripsi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Deskripsi"
+                android:text="@string/deskripsi"
                 android:singleLine="true"/>
 
             <LinearLayout
