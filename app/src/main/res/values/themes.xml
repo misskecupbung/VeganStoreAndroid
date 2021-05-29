@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="ThemeOverlay.TokoOnline.AppWidgetContainer" parent="">
+        <item name="appWidgetBackgroundColor">@color/colorBackgroundVegan</item>
+        <item name="appWidgetTextColor">@color/colorPrimaryVegan</item>
+    </style>
+</resources>

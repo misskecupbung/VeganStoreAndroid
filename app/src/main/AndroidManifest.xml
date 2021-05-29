@@ -16,22 +16,32 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.ProductActivity"></activity>
+        <receiver android:name=".widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <activity android:name=".activity.ProductActivity" />
         <activity android:name=".activity.BaruActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.MasukActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activity.MasukActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.DetailProdukActivity" />
         <activity android:name=".activity.PengirimanActivity" />
         <activity android:name=".activity.ListAlamatActivity" />
-        <activity android:name=".activity.TambahAlamatActivity"></activity>
+        <activity android:name=".activity.TambahAlamatActivity" />
     </application>
 
 </manifest>

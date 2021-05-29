@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Vegan Store</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications">Pemberitahuan</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
     <!--kota/sektor pengiriman-->
     <string-array name="sektor">
@@ -22,4 +22,64 @@
         <item>Siang Hari (13.00-15.00)</item>
         <item>Sore Hari (16.00-17.00)</item>
     </string-array>
+    <string name="appwidget_text" translatable="false">Vegan Store</string>
+    <string name="appwidget_desc" translatable="false">Belanja Mudah dari Rumah</string>
+    <string name="add_widget">Tambah Widget</string>
+
+    <!-- String detail produk -->
+    <string name="nama_poduk">Nama Produk</string>
+    <string name="satuan">Satuan: </string>
+    <string name="berat">Berat</string>
+    <string name="nolkomaduakg" translatable="false">0.2kg</string>
+    <string name="stok">Stok</string>
+    <string name="tersedia">Tersedia</string>
+    <string name="ikhtisar">Ikhtisar</string>
+    <string name="kentang_desc">Kentang asli surabaya, ready stock setiap saat</string>
+    <string name="produk_terkait">Produk Terkait</string>
+    <string name="beli_sekarang">Beli Sekarang</string>
+
+    <!-- List Alamat -->
+    <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="belum_ada_alamat">Belum Ada Alamat</string>
+    <string name="tambah_alamat2">Tambahkan alamat anda sekarang untuk belanja di\nTokoku</string>
+    <string name="tambah_alamat">Tambah Alamat</string>
+
+    <!-- Login -->
+    <string name="belum_punya_akun">Belum Punya Akun?</string>
+    <string name="daftar">Daftar</string>
+    <string name="masuk">Masuk</string>
+
+    <!-- Masuk -->
+    <string name="pemesanan_sayur">Pemesanan Sayur</string>
+    <string name="lebih_efisien">Lebih Efisien Sekarang!</string>
+    <string name="mulai_pesanan">Mulai pesanan sayur dengan berbagai</string>
+    <string name="macam_jenis">macam jenis dan 100% organik</string>
+    <string name="mulai">Mulai</string>
+
+    <!-- Pengiriman -->
+    <string name="checkout" translatable="false">Checkout</string>
+    <string name="nama_lengkap">Nama Lengkap*</string>
+    <string name="nomor_telp">Nomor Telp*</string>
+    <string name="jalan">Jalan, No, RT/RW*</string>
+    <string name="pilih_sektor">Pilih Sektor</string>
+    <string name="nama">Nama</string>
+    <string name="nomor_telp2" translatable="false">0812345678</string>
+    <string name="alamat">alamat</string>
+    <string name="detail_pemesanan">Detail Pemesanan</string>
+    <string name="pilih_metode_pengiriman">* Pilih metode pengiriman</string>
+    <string name="catatan_pengiriman">Catatan Pengiriman</string>
+    <string name="catatan_penjual">Catatan untuk penjual(Opsional)</string>
+    <string name="berlangganan">Berlangganan</string>
+    <string name="menjadi_pelanggan">Menjadi Pelanggan Tetap</string>
+    <string name="kemasan_produk">Kemasan Produk</string>
+    <string name="tidak_menggunakan_plastik">Tidak Menggunakan Plastik</string>
+    <string name="waktu_pengiriman">Waktu Pengiriman</string>
+    <string name="tanggal_pengiriman">Tanggal Pengiriman*</string>
+    <string name="rekap_belanja">Rekap Belanja</string>
+    <string name="total_belanja">Total Belanja</string>
+    <string name="biaya_pengiriman">Biaya Pengiriman</string>
+    <string name="total" translatable="false">Total</string>
+    <string name="bayar">Bayar</string>
+
+
 </resources>

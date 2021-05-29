@@ -51,7 +51,7 @@
                             android:layout_marginRight="10dp"
                             android:ellipsize="marquee"
                             android:maxLines="3"
-                            android:text="Nama Produk "
+                            android:text="@string/nama_poduk"
                             android:textColor="@color/colorFontVeganGreen"
                             android:textSize="20dp"
                             android:textStyle="bold"
@@ -80,7 +80,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Satuan : "
+                            android:text="@string/satuan"
                             android:textColor="@color/colorFontVeganGrey"
                             android:textSize="16dp"
                             android:textStyle="bold"
@@ -90,7 +90,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text="Satuan"
+                            android:text="1"
                             android:textColor="@color/dark"
                             android:textSize="16dp"
                             android:textStyle="bold"
@@ -135,7 +135,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Berat"
+                                    android:text="@string/berat"
                                     android:textColor="@color/dark"
                                     android:textSize="16sp"
                                     android:fontFamily="@font/poppins_regular"/>
@@ -144,7 +144,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
-                                    android:text="0.2kg"
+                                    android:text="@string/nolkomaduakg"
                                     android:textStyle="bold"
                                     android:textColor="@color/colorFontVeganGrey"
                                     android:textSize="16sp"
@@ -175,7 +175,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Stok"
+                                    android:text="@string/stok"
                                     android:textSize="16sp"
                                     android:fontFamily="@font/poppins_regular"
                                     android:textColor="@color/dark" />
@@ -184,7 +184,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
-                                    android:text="Tersedia"
+                                    android:text="@string/tersedia"
                                     android:textStyle="bold"
                                     android:textColor="@color/colorFontVeganGrey"
                                     android:textSize="16sp"
@@ -207,7 +207,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:text="Overview"
+                    android:text="@string/ikhtisar"
                     android:textColor="@color/dark"
                     android:textSize="15dp"
                     android:textStyle="bold" />
@@ -217,7 +217,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="15dp"
-                    android:text="Kentang asli surabaya, ready stock setiap saat"
+                    android:text="@string/kentang_desc"
                     android:textColor="@color/dark"
                     android:textSize="13dp" />
 
@@ -237,7 +237,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
-                        android:text="Produk Terkait"
+                        android:text="@string/produk_terkait"
                         android:textColor="@color/dark"
                         android:textSize="15dp"
                         android:textStyle="bold" />
@@ -303,7 +303,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="Beli Sekarang"
+                    android:text="@string/beli_sekarang"
                     android:textColor="@color/white"
                     android:textSize="15dp"
                     android:textStyle="bold" />

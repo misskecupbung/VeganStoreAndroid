@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Checkout"
+        android:text="@string/checkout"
         android:textColor="@color/white"
         android:fontFamily="@font/poppins_bold"
         android:textSize="16dp"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Alamat Pengiriman"
+                android:text="@string/alamat_pengiriman"
                 android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:textStyle="bold"
@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:hint="Nama Lengkap*"
+                    android:hint="@string/nama_lengkap"
                     android:textSize="14dp"
                     android:fontFamily="@font/poppins_regular"/>
 
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:hint="Nomor telp*"
+                    android:hint="@string/nomor_telp"
                     android:inputType="number"
                     android:maxLength="14"
                     android:textSize="14dp"
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:hint="Jalan, No, RT/RW*"
+                    android:hint="@string/jalan"
                     android:inputType="textMultiLine"
                     android:lines="3"
                     android:textSize="14dp"
@@ -173,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:text="Pilih Sektor"
+                    android:text="@string/pilih_sektor"
                     android:textSize="14dp"
                     android:fontFamily="@font/poppins_regular"/>
 
@@ -212,7 +212,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:ellipsize="marquee"
-                            android:text="Nama"
+                            android:text="@string/nama"
                             android:textColor="@color/dark"
                             android:textStyle="bold" />
 
@@ -220,7 +220,7 @@
                             android:id="@+id/tv_phone"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0812345678"
+                            android:text="@string/nomor_telp2"
                             android:textColor="@color/dark"
                             android:textSize="14dp" />
 
@@ -228,7 +228,7 @@
                             android:id="@+id/tv_alamat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="alamat"
+                            android:text="@string/alamat"
                             android:textColor="@color/dark"
                             android:textSize="14dp" />
 
@@ -251,7 +251,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Detail Pemesanan"
+                    android:text="@string/detail_pemesanan"
                     android:textColor="@color/colorBlack"
                     android:textSize="14dp" />
 
@@ -278,7 +278,7 @@
                         android:fontFamily="@font/poppins_regular"
                         android:lines="2"
                         android:maxLines="3"
-                        android:text="Nama Produk"
+                        android:text="@string/nama_poduk"
                         android:textColor="@color/colorBlack" />
 
 
@@ -292,7 +292,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
-                    android:text="* Pilih metode pengiriman"
+                    android:text="@string/pilih_metode_pengiriman"
                     android:visibility="gone" />
 
                 <androidx.cardview.widget.CardView
@@ -312,7 +312,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Catatan Pengiriman"
+                android:text="@string/catatan_pengiriman"
                 android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:fontFamily="@font/poppins_bold" />
@@ -328,7 +328,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:hint="Catatan untuk penjual(Opsional)"
+                    android:hint="@string/catatan_penjual"
                     android:textSize="14dp"
                     android:fontFamily="@font/poppins_regular"/>
 
@@ -351,7 +351,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Menjadi Pelanggan Tetap"
+                android:text="@string/menjadi_pelanggan"
                 android:fontFamily="@font/poppins_regular"/>
             <CheckBox
                 android:id="@+id/checkBox"
@@ -364,7 +364,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Kemasan Produk"
+                android:text="@string/kemasan_produk"
                 android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:fontFamily="@font/poppins_bold" />
@@ -377,7 +377,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Tidak Menggunakan Plastik"
+                    android:text="@string/tidak_menggunakan_plastik"
                     android:fontFamily="@font/poppins_regular"/>
 
                 <CheckBox
@@ -391,7 +391,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Waktu Pengiriman"
+                android:text="@string/waktu_pengiriman"
                 android:textColor="@color/colorBlack"
                 android:textSize="14dp"
                 android:textStyle="bold"
@@ -410,7 +410,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:hint="Tanggal Pengiriman*"
+                    android:hint="@string/tanggal_pengiriman"
                     android:textSize="14dp"
                     android:fontFamily="@font/poppins_regular"/>
 
@@ -427,7 +427,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:text="Waktu Pengiriman"
+                    android:text="@string/waktu_pengiriman"
                     android:textSize="14dp"
                     android:fontFamily="@font/poppins_regular"/>
                 <Spinner
@@ -440,7 +440,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Rekap Belanja"
+                android:text="@string/rekap_belanja"
                 android:textColor="@color/colorPrimary"
                 android:textSize="14dp"
                 android:textStyle="bold" />
@@ -465,7 +465,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total Belanja"
+                            android:text="string/total_belanja"
                             android:textColor="@color/colorBlack"
                             android:fontFamily="@font/poppins_bold"/>
 
@@ -494,7 +494,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Biaya Pengiriman"
+                            android:text="string/biaya_pengiriman"
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
@@ -521,7 +521,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total"
+                            android:text="@string/total"
                             android:textColor="@color/colorPrimary" />
 
                         <TextView
@@ -546,7 +546,7 @@
                 android:layout_marginVertical="15dp"
                 android:background="@drawable/bg_btn_beli"
                 android:paddingHorizontal="15dp"
-                android:text="Bayar"
+                android:text="@string/bayar"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:fontFamily="@font/poppins_bold"/>

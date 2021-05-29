@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="Pemesanan Sayur"
+            android:text="@string/pemesanan_sayur"
             android:textColor="#DF5000"
             android:textSize="25dp"
             android:textStyle="bold" />
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="Lebih Efisien Sekarang!"
+            android:text="@string/lebih_efisien"
             android:textColor="#DF5000"
             android:textSize="25dp"
             android:textStyle="bold" />
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_regular"
-            android:text="Mulai pesanan sayur dengan berbagai"
+            android:text="@string/mulai_pesanan"
             android:textColor="#000000"
             android:textSize="15dp" />
 
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_regular"
-            android:text="macam jenis dan 100% organik"
+            android:text="@string/macam_jenis"
             android:textColor="#000000"
             android:textSize="15dp" />
 
@@ -66,7 +66,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_btn_login2"
             android:fontFamily="@font/poppins_regular"
-            android:text="Mulai"
+            android:text="@string/mulai"
             android:textColor="#ffffff" />
     </LinearLayout>
 
