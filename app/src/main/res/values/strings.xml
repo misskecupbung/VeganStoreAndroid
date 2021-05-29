@@ -81,5 +81,50 @@
     <string name="total" translatable="false">Total</string>
     <string name="bayar">Bayar</string>
 
+    <!-- Product -->
+    <string name="kategori">Kategori</string>
+    <string name="produk">Produk</string>
+    <string name="surel">Surel</string>
+    <string name="nomor_telp3">Nomor Telepon</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="nama_lengkap2">Nama Lengkap</string>
+
+    <!-- Tambah Alamat -->
+    <string name="rumah">Rumah/kos/kantor*</string>
+    <string name="kodepos">Kode Pos*</string>
+    <string name="simpan">Simpan</string>
+
+    <!-- Text -->
+    <string name="profil">PROFIL</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="nomor_telp4">Nomor Telp</string>
+    <string name="ubah_profil">Ubah Profil</string>
+    <string name="ubah_sandi">Ubah Sandi</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="riwayat_belanja">Riwayat Belanja</string>
+    <string name="daftar_keranjang">Daftar Keranjang</string>
+    <string name="daftar_keinginan">Daftar Keinginan</string>
+    <string name="pengaturan_alamat">Pengaturan Alamat</string>
+    <string name="tentang_kami">Tentang Kami</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="keluar">Keluar</string>
+    <string name="versi">Versi 1.0.0</string>
+
+    <!-- Fragment Home-->
+    <string name="carisayur">Cari Sayur...</string>
+    <string name="lainnya">Lainnya</string>
+    <string name="superdiskon">Super Diskon</string>
+    <string name="kejardiskon">Kejar diskonnya, nikmati hasilnya!</string>
+
+    <!-- Fragment Keranjang-->
+    <string name="keranjang">Keranjang</string>
+    <string name="pilihsemua">Pilih Semua</string>
+
+    <!-- Transaksi -->
+    <string name="keranjangsepi">Kok Keranjangmu Sepi?</string>
+    <string name="tambahproduk">Yuk tambah produk yang kamu suka!</string>
+    <string name="belanja">Belanja</string>
+
+
 
 </resources>

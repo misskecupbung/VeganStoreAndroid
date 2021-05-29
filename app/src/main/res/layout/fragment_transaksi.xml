@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="Kok Keranjangmu Sepi?"
+        android:text="@string/keranjangsepi"
         android:textColor="#000000"
         android:textSize="15dp" />
 
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_regular"
-        android:text="Yuk tambah produk yang kamu suka!"
+        android:text="@string/tambahproduk"
         android:textColor="#000000"
         android:textSize="15dp" />
     <Button
@@ -41,7 +41,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_btn_login2"
         android:fontFamily="@font/poppins_regular"
-        android:text="Belanja"
+        android:text="@string/belanja"
         android:textColor="#ffffff" />
 
 

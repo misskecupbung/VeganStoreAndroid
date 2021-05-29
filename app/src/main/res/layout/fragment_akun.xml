@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:gravity="center"
-                    android:text="Nama User"
+                    android:text="@string/nama_pengguna"
                     android:textSize="20sp"
                     android:textColor="@color/colorFontVeganGreen"
                     android:fontFamily="@font/poppins_bold"/>
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:gravity="center"
-                    android:text="Email"
+                    android:text="@string/surel"
                     android:textSize="18sp"
                     android:textColor="@color/colorFontVeganGreen"
                     android:fontFamily="@font/poppins_bold"/>
@@ -109,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:gravity="center"
-                    android:text="Nomor Telp"
+                    android:text="@string/nomor_telp4"
                     android:textSize="16sp"
                     android:textColor="@color/colorFontVeganGreen"
                     android:fontFamily="@font/poppins_bold"/>
@@ -165,7 +165,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Ubah Profile"
+                                        android:text="@string/ubah_profil"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -201,7 +201,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Ubah Password"
+                                        android:text="@string/ubah_sandi"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -236,7 +236,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Notifikasi"
+                                        android:text="@string/notifikasi"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -290,7 +290,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Riwayat belanja"
+                                        android:text="@string/riwayat_belanja"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -326,7 +326,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Daftar Keranjang"
+                                        android:text="@string/daftar_keranjang"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -362,7 +362,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Wish List"
+                                        android:text="@string/daftar_keinginan"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -398,7 +398,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Pengaturan Alamat"
+                                        android:text="@string/pengaturan_alamat"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -452,7 +452,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Tentang Kami"
+                                        android:text="@string/tentang_kami"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -488,7 +488,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Bantuan"
+                                        android:text="@string/bantuan"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -543,7 +543,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Log Out"
+                                        android:text="@string/keluar"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -569,7 +569,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Verison 1.0.0"/>
+                            android:text="@string/versi"/>
 
                     </LinearLayout>
 

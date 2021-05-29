@@ -45,4 +45,6 @@
     <string name="jalan">Street, No, RT/RW*</string>
     <string name="nomor_telp">Phone Numb*</string>
     <string name="nama_lengkap">Full Name*</string>
+    <string name="kategori">Category</string>
+    <string name="produk">Product</string>
 </resources>
