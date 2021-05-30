@@ -16,6 +16,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.CheckoutActivity"></activity>
+
         <receiver android:name=".widget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -39,9 +41,9 @@
         </activity>
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.DetailProdukActivity" />
-        <activity android:name=".activity.PengirimanActivity" />
-        <activity android:name=".activity.ListAlamatActivity" />
-        <activity android:name=".activity.TambahAlamatActivity" />
+        <activity android:name=".activity.CheckoutActivity"
+            tools:ignore="DuplicateActivity" />
+
     </application>
 
 </manifest>

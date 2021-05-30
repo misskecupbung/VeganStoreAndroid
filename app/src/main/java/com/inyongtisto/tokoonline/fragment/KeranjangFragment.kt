@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 import com.inyongtisto.tokoonline.R
+import com.inyongtisto.tokoonline.activity.CheckoutActivity
 import com.inyongtisto.tokoonline.activity.PengirimanActivity
 import com.inyongtisto.tokoonline.adapter.AdapterKeranjang
 import com.inyongtisto.tokoonline.helper.Helper
@@ -84,7 +85,7 @@ class KeranjangFragment : Fragment() {
         }
 
         btnBayar.setOnClickListener {
-            val intent = Intent(requireActivity(), PengirimanActivity::class.java)
+            val intent = Intent(requireActivity(), CheckoutActivity::class.java)
             intent.putExtra("extra", "" + totalHarga)
             startActivity(intent)
         }

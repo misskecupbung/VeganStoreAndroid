@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.BaruActivity">
+    tools:context=".activity.CheckoutActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -153,13 +153,6 @@
                     android:textSize="14dp" />
 
             </RelativeLayout>
-
-            <ProgressBar
-                android:id="@+id/pb"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -357,7 +350,7 @@
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="500dp"/>
+                android:layout_marginLeft="200dp"/>
         </LinearLayout>
 
             <TextView
@@ -384,7 +377,7 @@
                     android:id="@+id/checkBox1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="485dp"/>
+                    android:layout_marginLeft="200dp"/>
             </LinearLayout>
 
             <TextView
