@@ -166,7 +166,6 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:text="@string/pilih_sektor"
                     android:textSize="14dp"
                     android:fontFamily="@font/poppins_regular"/>
 
@@ -350,7 +349,7 @@
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"/>
+                android:layout_marginLeft="40dp"/>
         </LinearLayout>
 
             <TextView
@@ -377,7 +376,7 @@
                     android:id="@+id/checkBox1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="200dp"/>
+                    android:layout_marginLeft="40dp"/>
             </LinearLayout>
 
             <TextView
@@ -420,7 +419,6 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@null"
-                    android:text="@string/waktu_pengiriman"
                     android:textSize="14dp"
                     android:fontFamily="@font/poppins_regular"/>
                 <Spinner
@@ -434,9 +432,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="@string/rekap_belanja"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorBlack"
                 android:textSize="14dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -458,7 +457,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="string/total_belanja"
+                            android:text="@string/total_belanja"
                             android:textColor="@color/colorBlack"
                             android:fontFamily="@font/poppins_bold"/>
 
@@ -487,8 +486,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="string/biaya_pengiriman"
-                            android:textColor="@color/colorPrimary" />
+                            android:text="@string/biaya_pengiriman"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/poppins_regular"/>
 
                         <TextView
                             android:id="@+id/tv_ongkir"
@@ -515,7 +515,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/total"
-                            android:textColor="@color/colorPrimary" />
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="13sp"/>
 
                         <TextView
                             android:id="@+id/tv_total"
