@@ -22,7 +22,7 @@
         <item>Siang Hari (13.00-15.00)</item>
         <item>Sore Hari (16.00-17.00)</item>
     </string-array>
-    <string name="appwidget_text" translatable="false">Vegan Store</string>
+    <string name="appwidget_text" translatable="false">Mulai</string>
     <string name="appwidget_desc" translatable="false">Belanja Mudah dari Rumah</string>
     <string name="add_widget">Tambah Widget</string>
 
