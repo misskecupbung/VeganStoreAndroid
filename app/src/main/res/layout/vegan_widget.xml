@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VeganStore"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorFontVeganGreen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text="Belanja Mudah dari Rumah"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorFontVeganGreen"/>
+
+
+
+        <Button
+            android:id="@+id/button_widget"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_login1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Belanja Yuk"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

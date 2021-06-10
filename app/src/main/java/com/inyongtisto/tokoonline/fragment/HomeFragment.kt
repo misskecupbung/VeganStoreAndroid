@@ -165,6 +165,12 @@ class HomeFragment : Fragment() {
         //rvElektronik = view.findViewById(R.id.rv_elektronik)
     }
 
+    override fun onResume() {
+        getProduk()
+        getKategori()
+        super.onResume()
+    }
+
 //    val arrProduk: ArrayList<Produk>get(){
 //        val arr = ArrayList<Produk>()
 //        val p1 = Produk()

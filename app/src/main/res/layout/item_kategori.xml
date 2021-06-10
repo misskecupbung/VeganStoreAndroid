@@ -18,7 +18,7 @@
             android:id="@+id/img_kategori"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/product"/>
+            android:src="@drawable/vegetable"/>
 
         <TextView
             android:id="@+id/tv_nama_kategori"
@@ -30,10 +30,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Nama Produk"
+            android:text="Nama Kategori"
             android:textSize="12sp"
             android:textColor="@color/colorPrimary"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"/>
 
     </LinearLayout>
 </LinearLayout>

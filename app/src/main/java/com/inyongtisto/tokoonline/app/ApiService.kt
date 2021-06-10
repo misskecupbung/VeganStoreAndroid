@@ -1,5 +1,6 @@
 package com.inyongtisto.tokoonline.app
 
+import com.inyongtisto.tokoonline.model.Chekout
 import com.inyongtisto.tokoonline.model.Produk
 import com.inyongtisto.tokoonline.model.ResponModel
 import com.inyongtisto.tokoonline.model.rajaongkir.ResponOngkir
@@ -47,13 +48,45 @@ interface ApiService {
 //      Get All
     @GET("profil/{id}")
     fun getProfil(
-        @Path(value="keyword") keyword: String
+        @Path(value="id") id: Int
     ): Call<ResponModel>
 
 //    Category
 //      Get Category
     @GET("category")
     fun getKategori(): Call<ResponModel>
+
+//    Sector Detail
+    @GET("sector_detail")
+    fun getSectroDetail(
+    ): Call<ResponModel>
+
+
+//    Checkout / Transaksi
+    @POST("checkout")
+    fun chekout(
+        @Body data: Chekout
+    ): Call<ResponModel>
+
+//    History
+//      Completed Transaksi
+    @GET("history/completed/{id_customer}")
+    fun getHistoryCompleted(
+        @Path(value="id_customer") id_customer: Int
+    ): Call<ResponModel>
+
+//    Progress Transaksi
+    @GET("history/process/{id_customer}")
+    fun getHistoryProgress(
+        @Path(value="id_customer") id_customer: Int
+    ): Call<ResponModel>
+
+//    Detail Transaksi
+    @GET("history/order/detail/{id}")
+    fun getDetailHistory(
+        @Path(value="id") id: Int
+    ): Call<ResponModel>
+
 
 
     @GET("province")

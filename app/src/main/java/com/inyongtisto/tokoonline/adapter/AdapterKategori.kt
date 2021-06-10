@@ -60,8 +60,8 @@ class AdapterKategori(var activity: Activity, var data: ArrayList<Kategori>) :
         val image = Config.categoryUrl + data[position].image
         Picasso.get()
             .load(image)
-            .placeholder(R.drawable.product)
-            .error(R.drawable.product)
+            .placeholder(R.drawable.vegetable)
+            .error(R.drawable.vegetable)
             .into(holder.imgKategori)
 
         holder.layout.setOnClickListener {

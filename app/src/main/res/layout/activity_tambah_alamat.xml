@@ -98,8 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/bg_btn_google"
-                android:visibility="gone">
+                android:background="@drawable/bg_btn_google">
 
                 <Spinner
                     android:id="@+id/spn_provinsi"

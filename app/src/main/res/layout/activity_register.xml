@@ -221,15 +221,18 @@
 
                 <Button
                     android:id="@+id/btn_register"
-                    android:layout_width="match_parent"
+                    android:layout_width="175dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/bg_btn_login1"
                     android:fontFamily="@font/poppins_bold"
+                    android:textStyle="bold"
                     android:text="Register"
                     android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    />
 
 
             </LinearLayout>

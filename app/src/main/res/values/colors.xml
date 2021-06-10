@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#001342</color>
-    <color name="colorPrimaryDark">#001342</color>
+    <color name="colorPrimary">#0C0909</color>
+    <color name="colorPrimaryDark">#0C0909</color>
     <color name="colorAccent">#001342</color>
 
     <color name="colorPrimarySoft">#204DBE</color>
@@ -9,7 +9,8 @@
     <color name="orange">#FF9800</color>
     <color name="white">#FFFFFF</color>
 
-    <color name="dark">#121931</color>
+    <color name="dark">#0C0909</color>
+    <color name="grey">#554D4D</color>
     <color name="biru">#0099FF</color>
 
 <!--  Vegan Store Color  -->
@@ -23,6 +24,11 @@
     <color name="colorBottomMenuVegan">#F0F0F0</color>
     <color name="colorButtonFavorite">#D65128</color>
     <color name="colorBackgroundSignIn">#D1F090</color>
+    <color name="colorMasukText1">#DF5000</color>
+
+    <color name="progress">#FF9800</color>
+    <color name="selesai">#4CAF50</color>
+    <color name="batal">#E91E1E</color>
 
 
 

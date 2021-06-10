@@ -15,11 +15,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 import com.inyongtisto.tokoonline.R
+import com.inyongtisto.tokoonline.activity.LoginActivity
 import com.inyongtisto.tokoonline.activity.PengirimanActivity
 import com.inyongtisto.tokoonline.adapter.AdapterKeranjang
 import com.inyongtisto.tokoonline.helper.Helper
+import com.inyongtisto.tokoonline.helper.SharedPref
 import com.inyongtisto.tokoonline.model.Produk
 import com.inyongtisto.tokoonline.room.MyDatabase
+import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.schedulers.Schedulers
 
 /**
  * A simple [Fragment] subclass.
@@ -27,12 +33,14 @@ import com.inyongtisto.tokoonline.room.MyDatabase
 class KeranjangFragment : Fragment() {
 
     lateinit var myDb: MyDatabase
+    private lateinit var s: SharedPref
 
     // dipangil sekali ketika aktivity aktif
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view: View = inflater.inflate(R.layout.fragment_keranjang, container, false)
         init(view)
         myDb = MyDatabase.getInstance(requireActivity())!!
+        s = SharedPref(this.requireActivity())
 
         mainButton()
         return view
@@ -80,13 +88,25 @@ class KeranjangFragment : Fragment() {
 
     private fun mainButton() {
         btnDelete.setOnClickListener {
+            val listDelete = ArrayList<Produk>()
+            for (p in listProduk) {
+                if (p.selected) listDelete.add(p)
+            }
 
+            delete(listDelete)
         }
 
         btnBayar.setOnClickListener {
-            val intent = Intent(requireActivity(), PengirimanActivity::class.java)
-            intent.putExtra("extra", "" + totalHarga)
-            startActivity(intent)
+            if (s.getStatusLogin()) {
+                val intent = Intent(requireActivity(), PengirimanActivity::class.java)
+                intent.putExtra("extra", "" + totalHarga)
+                startActivity(intent)
+            } else {
+                startActivity(Intent(this.requireActivity(), LoginActivity::class.java))
+            }
+//            val intent = Intent(requireActivity(), PengirimanActivity::class.java)
+//            intent.putExtra("extra", "" + totalHarga)
+//            startActivity(intent)
         }
 
         cbAll.setOnClickListener {
@@ -98,6 +118,17 @@ class KeranjangFragment : Fragment() {
             }
             adapter.notifyDataSetChanged()
         }
+    }
+
+    private fun delete(data: ArrayList<Produk>) {
+        CompositeDisposable().add(Observable.fromCallable { myDb.daoKeranjang().delete(data) }
+            .subscribeOn(Schedulers.computation())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe {
+                listProduk.clear()
+                listProduk.addAll(myDb.daoKeranjang().getAll() as ArrayList)
+                adapter.notifyDataSetChanged()
+            })
     }
 
     lateinit var btnDelete: ImageView

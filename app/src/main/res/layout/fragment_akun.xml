@@ -176,7 +176,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Ubah Profile"
-                                        android:textColor="@color/colorPrimaryDark" />
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:fontFamily="@font/poppins_regular"/>
 
                                 </LinearLayout>
 
@@ -212,7 +213,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Ubah Password"
-                                        android:textColor="@color/colorPrimaryDark" />
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:fontFamily="@font/poppins_regular"/>
 
                                 </LinearLayout>
 
@@ -247,7 +249,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Notifikasi"
-                                        android:textColor="@color/colorPrimaryDark" />
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:fontFamily="@font/poppins_regular"/>
 
                                 </LinearLayout>
 
@@ -301,7 +304,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Riwayat belanja"
-                                        android:textColor="@color/colorPrimaryDark" />
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:fontFamily="@font/poppins_regular"/>
 
                                 </LinearLayout>
 
@@ -337,6 +341,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Daftar Keranjang"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -373,6 +378,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Wish List"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -409,6 +415,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Pengaturan Alamat"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -463,6 +470,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Tentang Kami"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -499,6 +507,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Bantuan"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>
@@ -554,6 +563,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
                                         android:text="Log Out"
+                                        android:fontFamily="@font/poppins_regular"
                                         android:textColor="@color/colorPrimaryDark" />
 
                                 </LinearLayout>

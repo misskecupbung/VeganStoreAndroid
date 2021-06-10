@@ -14,6 +14,8 @@
         android:color="@color/colorPrimaryVegan"
         app:contentInsetStartWithNavigation="0dp"
         app:paddingEnd="5dp"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="Checkout"
+        />
 
 </com.google.android.material.appbar.AppBarLayout>

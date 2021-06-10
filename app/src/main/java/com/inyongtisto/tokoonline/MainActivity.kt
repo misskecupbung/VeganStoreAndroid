@@ -12,8 +12,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.inyongtisto.tokoonline.activity.HistoryActivity
 import com.inyongtisto.tokoonline.activity.LoginActivity
 import com.inyongtisto.tokoonline.activity.MasukActivity
+import com.inyongtisto.tokoonline.activity.RiwayatActivity
 import com.inyongtisto.tokoonline.fragment.AkunFragment
 import com.inyongtisto.tokoonline.fragment.HistoryFragment
 import com.inyongtisto.tokoonline.fragment.HomeFragment
@@ -87,7 +89,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.navigation_transaksi -> {
                     if (s.getStatusLogin()) {
-                        callFargment(3, fragmentHistory)
+                        startActivity(Intent(this, HistoryActivity::class.java))
                     } else {
                         startActivity(Intent(this, LoginActivity::class.java))
                     }

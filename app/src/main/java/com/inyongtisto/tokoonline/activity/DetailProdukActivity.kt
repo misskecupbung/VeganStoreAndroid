@@ -62,6 +62,16 @@ class DetailProdukActivity : AppCompatActivity() {
             LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
             onBackPressed()
         }
+
+        btn_keranjang2.setOnClickListener {
+            val data = myDb.daoKeranjang().getProduk(produk.id)
+            if (data == null) {
+                insert()
+            } else {
+                data.jumlah += 1
+                update(data)
+            }
+        }
     }
 
     private fun insert() {
@@ -109,8 +119,8 @@ class DetailProdukActivity : AppCompatActivity() {
         val img = Config.productUrl + produk.image
         Picasso.get()
                 .load(img)
-                .placeholder(R.drawable.product)
-                .error(R.drawable.product)
+                .placeholder(R.drawable.cabbage)
+                .error(R.drawable.cabbage)
                 .resize(400, 400)
                 .into(image)
 

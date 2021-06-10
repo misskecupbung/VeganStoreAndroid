@@ -28,11 +28,11 @@ class AdapterProduk(var activity: Activity, var data: ArrayList<Produk>) :
     RecyclerView.Adapter<AdapterProduk.Holder>() {
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
-        val tvNama = view.findViewById<TextView>(R.id.tv_nama)
-        val tvHarga = view.findViewById<TextView>(R.id.tv_harga)
-        val tvDeskripsi = view.findViewById<TextView>(R.id.tv_deskripsi)
-        val tvSatuan = view.findViewById<TextView>(R.id.tv_satuan)
-        val imgProduk = view.findViewById<ImageView>(R.id.img_produk)
+        val tvNama = view.findViewById<TextView>(R.id.tv_nama_product)
+        val tvHarga = view.findViewById<TextView>(R.id.tv_harga_product)
+        val tvDeskripsi = view.findViewById<TextView>(R.id.tv_deskripsi_product)
+        val tvSatuan = view.findViewById<TextView>(R.id.tv_satuan_product)
+        val imgProduk = view.findViewById<ImageView>(R.id.img_produk_adapter)
         val layout = view.findViewById<CardView>(R.id.layout_product)
     }
 
@@ -67,8 +67,8 @@ class AdapterProduk(var activity: Activity, var data: ArrayList<Produk>) :
         val image = Config.productUrl + data[position].image
         Picasso.get()
                 .load(image)
-                .placeholder(R.drawable.product)
-                .error(R.drawable.product)
+                .placeholder(R.drawable.cabbage)
+                .error(R.drawable.cabbage)
                 .into(holder.imgProduk)
 
         holder.layout.setOnClickListener {

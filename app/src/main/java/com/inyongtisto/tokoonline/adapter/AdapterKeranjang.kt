@@ -24,17 +24,19 @@ import kotlin.collections.ArrayList
 class AdapterKeranjang(var activity: Activity, var data: ArrayList<Produk>, var listener: Listeners) : RecyclerView.Adapter<AdapterKeranjang.Holder>() {
 
     class Holder(view: View) : RecyclerView.ViewHolder(view) {
-        val tvNama = view.findViewById<TextView>(R.id.tv_nama)
-        val tvHarga = view.findViewById<TextView>(R.id.tv_harga)
-        val imgProduk = view.findViewById<ImageView>(R.id.img_produk)
-        val layout = view.findViewById<CardView>(R.id.layout)
+        val tvNama = view.findViewById<TextView>(R.id.tv_nama_keranjang)
+        val tvHarga = view.findViewById<TextView>(R.id.tv_harga_keranjang)
+        val tvPrice = view.findViewById<TextView>(R.id.tv_price_keranjang)
+        val tvTypeunit = view.findViewById<TextView>(R.id.tv_typeunit_keranjang)
+        val imgProduk = view.findViewById<ImageView>(R.id.img_produk_keranjang)
+        val layout = view.findViewById<CardView>(R.id.layout_keranjang)
 
-        val btnTambah = view.findViewById<ImageView>(R.id.btn_tambah)
-        val btnKurang = view.findViewById<ImageView>(R.id.btn_kurang)
-        val btnDelete = view.findViewById<ImageView>(R.id.btn_delete)
+        val btnTambah = view.findViewById<ImageView>(R.id.btn_tambah_keranjang)
+        val btnKurang = view.findViewById<ImageView>(R.id.btn_kurang_keranjang)
+        val btnDelete = view.findViewById<ImageView>(R.id.btn_delete_keranjang)
 
-        val checkBox = view.findViewById<CheckBox>(R.id.checkBox)
-        val tvJumlah = view.findViewById<TextView>(R.id.tv_jumlah)
+        val checkBox = view.findViewById<CheckBox>(R.id.checkBox_keranjang)
+        val tvJumlah = view.findViewById<TextView>(R.id.tv_jumlah_keranjang)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -52,6 +54,8 @@ class AdapterKeranjang(var activity: Activity, var data: ArrayList<Produk>, var 
         val harga = Integer.valueOf(produk.price)
 
         holder.tvNama.text = produk.name
+        holder.tvTypeunit.text = produk.typeunit
+        holder.tvPrice.text = Helper().gantiRupiah(harga)
         holder.tvHarga.text = Helper().gantiRupiah(harga * produk.jumlah)
 
         var jumlah = data[position].jumlah
@@ -66,8 +70,8 @@ class AdapterKeranjang(var activity: Activity, var data: ArrayList<Produk>, var 
         val image = Config.productUrl + data[position].image
         Picasso.get()
                 .load(image)
-                .placeholder(R.drawable.product)
-                .error(R.drawable.product)
+                .placeholder(R.drawable.vegetables_cart)
+                .error(R.drawable.vegetables_cart)
                 .into(holder.imgProduk)
 
 
