@@ -119,25 +119,25 @@ class DetailTransaktion : AppCompatActivity() {
 
     private fun displayuseplastic() {
         if (transaction.useplastic == 1){
-            tv_useplastic.text = "Iya"
+            tv_useplastic.text = getString(R.string.ly_detailProduk_useplastic_iya)
         }else {
-            tv_useplastic.text = "Tidak"
+            tv_useplastic.text = getString(R.string.ly_detailProduk_useplastic_tidak)
         }
     }
 
     private fun displayberlangganan()  {
         if (transaction.scheduled == 1){
-            tv_scheduled.text = "Berlangganan"
+            tv_scheduled.text = getString(R.string.ly_detailProduk_berlangganan_iya)
         }else {
-            tv_scheduled.text = "Sekali Beli"
+            tv_scheduled.text = getString(R.string.ly_detailProduk_berlangganan_tidak)
         }
     }
 
     private fun displaystatus() {
         if (transaction.status == "Success"){
-            tv_status.text = "Telah Selesai"
+            tv_status.text = getString(R.string.ly_detailProduk_status_sukses)
         }else {
-            tv_status.text = "Sedang Diproses"
+            tv_status.text = getString(R.string.ly_detailProduk_status_progres)
         }
     }
 

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vegan Store</string>
+    <string name="ly_detailProduk_status_sukses">Telah Selesai</string>
+    <string name="ly_detailProduk_useplastic_iya">Iya</string>
+    <string name="ly_detailProduk_status_transaksi">Status Transaksi</string>
+    <string name="ly_detailProduk_useplastic_tidak">Tidak</string>
+    <string name="ly_detailProduk_waktu">"Waktu : "</string>
+    <string name="ly_error_edt_alamat">Kolom alamat tidak boleh kosong</string>
+    <string name="ly_error_edt_delivery_date">Kolom tanggal kirim tidak boleh kosong</string>
+    <string name="ly_error_edt_email">Kolom Email tidak boleh kosong</string>
+    <string name="ly_error_edt_nama">Kolom Nama tidak boleh kosong</string>
+    <string name="ly_error_edt_password">Kolom Password tidak boleh kosong</string>
+    <string name="ly_error_edt_phone">Kolom Nomor Telepon tidak boleh kosong</string>
+    <string name="ly_error_spiner_delivery_time">Waktu kirim tidak boleh kosong</string>
+    <string name="ly_error_spiner_detail_sector">Area pengiriman  tidak boleh kosong</string>
+    <string name="ly_insert_keranjang_detailProduk">Berhasil menambah ke keranjang</string>
+    <string name="ly_login_belum_punya_akun">Belum punya akun?</string>
+    <string name="ly_login_selamat_datang">Selamat datang</string>
+    <string name="fragment_home_lainnya">Lainnya</string>
+    <string name="fragment_home_desc_super_diskon">Kejar diskonnya, nikmatin hasilnya!</string>
+    <string name="fragment_home_super_diskon">Super Diskon</string>
+    <string name="fragment_keranjang_select_all">Pilih Semua</string>
+    <string name="fragment_keranjang_tittle">Keranjang</string>
+    <string name="item_name">Nama</string>
+    <string name="ly_detailProduk_berlangganan_iya">Berlangganan</string>
+    <string name="ly_detailProduk_berlangganan_tidak">Sekali beli</string>
+    <string name="ly_detailProduk_status_progres">Sedang Diproses</string>
+    <string name="ly_login_hint_password">Kata Sandi</string>
+    <string name="ly_login_login">Bergabung</string>
+    <string name="ly_login_sign_in">Masuk</string>
+    <string name="ly_login_sign_up">Daftar</string>
+    <string name="ly_masuk_mulai">Mulai</string>
+    <string name="ly_pengiriman_detail_alamat">Detail Alamat</string>
+    <string name="ly_pengiriman_edt_hint_delivery_date">Pilih Tanggal Pengiriman*</string>
+    <string name="ly_pengiriman_group_alamat">Alamat Pengiriman</string>
+    <string name="ly_pengiriman_tv_bayar">Bayar</string>
+    <string name="ly_pengiriman_tv_berlangganan">Berlangganan</string>
+    <string name="ly_pengiriman_tv_delivery_date">Tanggal Pengiririman</string>
+    <string name="ly_pengiriman_tv_delivery_price">Biaya Pengiriman</string>
+    <string name="ly_pengiriman_tv_delivery_time">Waktu Pengiririman</string>
+    <string name="ly_pengiriman_tv_desc_1_useplastic">Tidak menggunakan plastik</string>
+    <string name="ly_pengiriman_tv_desc_2_useplastic">Menggunakan kertas daur ulang</string>
+    <string name="ly_pengiriman_tv_desc_berlangganan">menjadi pelanggan tetap</string>
+    <string name="ly_pengiriman_tv_group_delivery_date">Waktu Pengiriman</string>
+    <string name="ly_pengiriman_tv_group_detail_pesanan">Detail Pesanan</string>
+    <string name="ly_pengiriman_tv_group_rekap_belanja">Rekap Belanja</string>
+    <string name="ly_pengiriman_tv_hint_detail_alamat">Jalan, No, RT/RW, Kel, Kec*</string>
+    <string name="ly_pengiriman_tv_hint_note">Catatan (Opsional)</string>
+    <string name="ly_pengiriman_tv_nama">Nama Lengkap*</string>
+    <string name="ly_pengiriman_tv_note">Catatan Pengiriman</string>
+    <string name="ly_pengiriman_tv_phone">Nomor telp*</string>
+    <string name="ly_pengiriman_tv_subtotal">Total Belanja</string>
+    <string name="ly_pengiriman_tv_useplastic">Kemasan Produk</string>
+    <string name="ly_produk_category">Kategori</string>
+    <string name="ly_produk_product">Produk</string>
+    <string name="ly_register_nama_lengkap">Nama Lengkap</string>
+    <string name="ly_register_nomor_telepon">Nomor Telepon</string>
+    <string name="ly_register_register">Daftar</string>
+    <string name="notif_desc">cek kembali pesananmu dikeranjang agar tidak lupa~</string>
+    <string name="notif_tittle">Asik, pesananmu sedang diproses nih!</string>
+    <string name="spiner_delivery_time">Pilih Waktu Pengiriman*</string>
+    <string name="spiner_sector">Pilih Daerah*</string>
+    <string name="sweet_alert_loading">Memuat...</string>
+    <string name="tab_completed">"Telah Selesai "</string>
+    <string name="tab_process">Sedang Proses</string>
+    <string name="tb_History">Riwayat</string>
+    <string name="toolbar_pengiriman">Pengiriman</string>
+    <string name="tv_his_detail_alamat">Alamat</string>
+    <string name="tv_his_detail_area">Wilayah</string>
+    <string name="tv_his_detail_berlangganan">Berlangganan</string>
+    <string name="tv_his_detail_delivery_date">Tanggal Pengiriman</string>
+    <string name="tv_his_detail_delivery_time">Waktu Pengiriman</string>
+    <string name="tv_his_detail_list_cart">Rincian Belanja</string>
+    <string name="tv_his_detail_nama">Nama</string>
+    <string name="tv_his_detail_phone">Nomor Telepon</string>
+    <string name="tv_his_detail_note">Keterangan</string>
+    <string name="tv_his_detail_useplastic">Kemasan Plastik</string>
+    <string name="tv_ongkos">Ongkos</string>
+    <string name="ly_masuk_pemesanan_sayur" translatable="false">"Pemesanan Sayur "</string>
+    <string name="ly_mauk_lebih_efisien_sekarang" translatable="false">Lebih Efisien Sekarang!</string>
+    <string name="ly_masuk_mulai_pesanan_sayur_dengan_berbagai" translatable="false">Mulai pesanan sayur dengan berbagai</string>
+    <string name="ly_masuk_macam_jenis_dan_100_organik" translatable="false">macam jenis dan 100% organik</string>
+</resources>

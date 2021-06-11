@@ -81,7 +81,7 @@ class DetailProdukActivity : AppCompatActivity() {
                 .subscribe {
                     checkKeranjang()
                     Log.d("respons", "data inserted")
-                    Toast.makeText(this, "Berhasil menambah kekeranjang", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.ly_insert_keranjang_detailProduk), Toast.LENGTH_SHORT).show()
                 })
     }
 
@@ -92,7 +92,7 @@ class DetailProdukActivity : AppCompatActivity() {
                 .subscribe {
                     checkKeranjang()
                     Log.d("respons", "data inserted")
-                    Toast.makeText(this, "Berhasil menambah kekeranjang", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.ly_insert_keranjang_detailProduk), Toast.LENGTH_SHORT).show()
                 })
     }
 

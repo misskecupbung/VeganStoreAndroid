@@ -32,28 +32,22 @@ class RegisterActivity : AppCompatActivity() {
 
     }
 
-    fun dataDummy() {
-        edt_nama.setText("Tisto")
-        edt_email.setText("tisto@gmail.com")
-        edt_phone.setText("018029839021")
-        edt_password.setText("12345678")
-    }
 
     fun register() {
         if (edt_nama.text.isEmpty()) {
-            edt_nama.error = "Kolom Nama tidak boleh kosong"
+            edt_nama.error = getString(R.string.ly_error_edt_nama)
             edt_nama.requestFocus()
             return
         } else if (edt_email.text.isEmpty()) {
-            edt_email.error = "Kolom Email tidak boleh kosong"
+            edt_email.error = getString(R.string.ly_error_edt_email)
             edt_email.requestFocus()
             return
         } else if (edt_phone.text.isEmpty()) {
-            edt_phone.error = "Kolom Nomor Telepon tidak boleh kosong"
+            edt_phone.error = getString(R.string.ly_error_edt_phone)
             edt_phone.requestFocus()
             return
         } else if (edt_password.text.isEmpty()) {
-            edt_password.error = "Kolom Password tidak boleh kosong"
+            edt_password.error = getString(R.string.ly_error_edt_password)
             edt_password.requestFocus()
             return
         }
@@ -75,7 +69,7 @@ class RegisterActivity : AppCompatActivity() {
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                     finish()
-                    Toast.makeText(this@RegisterActivity, "Selamat datang " + respon.Customer.name, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@RegisterActivity, getString(R.string.ly_login_selamat_datang) + respon.Customer.name, Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this@RegisterActivity, "Error:" + respon.Message, Toast.LENGTH_SHORT).show()
                 }

@@ -28,36 +28,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="Pemesanan Sayur"
+            android:text="@string/ly_masuk_pemesanan_sayur"
             android:textColor="@color/colorMasukText1"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="Lebih Efisien Sekarang!"
+            android:text="@string/ly_mauk_lebih_efisien_sekarang"
             android:textColor="@color/colorMasukText1"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_regular"
-            android:text="Mulai pesanan sayur dengan berbagai"
+            android:text="@string/ly_masuk_mulai_pesanan_sayur_dengan_berbagai"
             android:textColor="@color/dark"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_marginTop="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_regular"
-            android:text="macam jenis dan 100% organik"
-            android:textColor="#000000"
-            android:textSize="15dp" />
+            android:text="@string/ly_masuk_macam_jenis_dan_100_organik"
+            android:textColor="@color/dark"
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/btn_proseslogin"
@@ -66,7 +66,7 @@
             android:layout_marginTop="50dp"
             android:background="@drawable/bg_btn_login2"
             android:fontFamily="@font/poppins_bold"
-            android:text="Mulai"
+            android:text="@string/ly_masuk_mulai"
             android:textColor="#ffffff"
             />
     </LinearLayout>

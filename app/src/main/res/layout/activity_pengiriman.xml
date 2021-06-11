@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Alamat Pengiriman"
+                    android:text="@string/ly_pengiriman_group_alamat"
                     android:textColor="@color/colorPrimary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -68,7 +68,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
                                 android:background="@null"
-                                android:hint="Nama Lengkap*"
+                                android:hint="@string/ly_pengiriman_tv_nama"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/poppins_regular"/>
 
@@ -79,7 +79,7 @@
                                 android:layout_margin="10dp"
                                 android:layout_below="@+id/edt_nama"
                                 android:background="@null"
-                                android:hint="Nomor telp*"
+                                android:hint="@string/ly_pengiriman_tv_phone"
                                 android:inputType="number"
                                 android:maxLength="14"
                                 android:textSize="14sp"
@@ -93,7 +93,7 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginBottom="3dp"
-                                android:text="Detail Alamat"
+                                android:text="@string/ly_pengiriman_detail_alamat"
                                 android:fontFamily="@font/poppins_regular"/>
 
                             <RelativeLayout
@@ -112,7 +112,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="5dp"
                                     android:background="@null"
-                                    android:hint="Jalan, No, RT/RW, Kel, Kec*"
+                                    android:hint="@string/ly_pengiriman_tv_hint_detail_alamat"
                                     android:inputType="textMultiLine"
                                     android:lines="3"
                                     android:textSize="14sp"
@@ -172,7 +172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Detail Pesanan"
+                    android:text="@string/ly_pengiriman_tv_group_detail_pesanan"
                     android:textColor="@color/colorPrimary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -200,7 +200,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="Berlangganan"
+                    android:text="@string/ly_pengiriman_tv_berlangganan"
                     android:textColor="@color/colorPrimary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -215,7 +215,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:text="menjadi pelanggan tetap"
+                        android:text="@string/ly_pengiriman_tv_desc_berlangganan"
                         android:textColor="@color/grey"
                         android:textSize="13sp"
                         android:fontFamily="@font/poppins_regular"/>
@@ -234,7 +234,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="Kemasan Produk"
+                    android:text="@string/ly_pengiriman_tv_useplastic"
                     android:textColor="@color/colorPrimary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -269,7 +269,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:ellipsize="marquee"
-                                android:text="Tidak menggunakan plastik"
+                                android:text="@string/ly_pengiriman_tv_desc_1_useplastic"
                                 android:textSize="15sp"
                                 android:textColor="@color/dark"
                                 android:textStyle="bold"
@@ -285,7 +285,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="3dp"
                                     android:layout_alignParentLeft="true"
-                                    android:text="Menggunakan kertas daur ulang"
+                                    android:text="@string/ly_pengiriman_tv_desc_2_useplastic"
                                     android:textColor="@color/grey"
                                     android:textStyle="bold"
                                     android:fontFamily="@font/poppins_regular"
@@ -315,7 +315,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Waktu Pengiriman"
+                        android:text="@string/ly_pengiriman_tv_group_delivery_date"
                         android:textColor="@color/colorPrimary"
                         android:textSize="15sp"
                         android:textStyle="bold"
@@ -344,7 +344,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
                                     android:ellipsize="marquee"
-                                    android:text="Tanggal Pengiririman"
+                                    android:text="@string/ly_pengiriman_tv_delivery_date"
                                     android:textSize="14sp"
                                     android:textColor="@color/grey"
                                     android:fontFamily="@font/poppins_regular"/>
@@ -356,8 +356,8 @@
                                     android:layout_margin="10dp"
                                     android:layout_below="@id/tv_tanggal_static"
                                     android:background="@null"
-                                    android:hint="Pilih Tanggal Pengiriman*"
-                                    android:textSize="14dp"
+                                    android:hint="@string/ly_pengiriman_edt_hint_delivery_date"
+                                    android:textSize="14sp"
                                     android:fontFamily="@font/poppins_regular"/>
 
                                 <TextView
@@ -367,7 +367,7 @@
                                     android:layout_margin="10dp"
                                     android:layout_below="@+id/edt_tanggal"
                                     android:ellipsize="marquee"
-                                    android:text="Waktu Pengiririman"
+                                    android:text="@string/ly_pengiriman_tv_delivery_time"
                                     android:textSize="14sp"
                                     android:textColor="@color/grey"
                                     android:fontFamily="@font/poppins_regular"/>
@@ -426,7 +426,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Catatan Pengiriman"
+                    android:text="@string/ly_pengiriman_tv_note"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14dp"
                     android:textStyle="bold" />
@@ -448,8 +448,8 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:background="@null"
-                            android:hint="Catatan (Opsional)"
-                            android:textSize="14dp" />
+                            android:hint="@string/ly_pengiriman_tv_hint_note"
+                            android:textSize="14sp" />
 
                     </RelativeLayout>
 
@@ -459,7 +459,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Rekap Belanja"
+                    android:text="@string/ly_pengiriman_tv_group_rekap_belanja"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -485,7 +485,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Belanja"
+                                android:text="@string/ly_pengiriman_tv_subtotal"
                                 android:textColor="@color/colorPrimary"
                                 android:fontFamily="@font/poppins_regular"/>
 
@@ -514,7 +514,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Biaya Pengiriman"
+                                android:text="@string/ly_pengiriman_tv_delivery_price"
                                 android:textColor="@color/colorPrimary"
                                 android:fontFamily="@font/poppins_regular"/>
 
@@ -569,7 +569,7 @@
                     android:layout_marginVertical="20dp"
                     android:background="@drawable/bg_btn_beli"
                     android:paddingHorizontal="15dp"
-                    android:text="Bayar"
+                    android:text="@string/ly_pengiriman_tv_bayar"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:fontFamily="@font/poppins_bold"

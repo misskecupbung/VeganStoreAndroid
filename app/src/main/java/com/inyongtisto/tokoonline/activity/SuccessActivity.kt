@@ -80,25 +80,25 @@ class SuccessActivity : AppCompatActivity() {
 
     private fun displayuseplastic() {
         if (transaction.useplastic == 1){
-            tv_useplastic_sc.text = "Iya"
+            tv_useplastic_sc.text = getString(R.string.ly_detailProduk_useplastic_iya)
         }else {
-            tv_useplastic_sc.text = "Tidak"
+            tv_useplastic_sc.text = getString(R.string.ly_detailProduk_useplastic_tidak)
         }
     }
 
     private fun displayberlangganan()  {
         if (transaction.scheduled == 1){
-            tv_scheduled_sc.text = "Berlangganan"
+            tv_scheduled_sc.text = getString(R.string.ly_detailProduk_berlangganan_iya)
         }else {
-            tv_scheduled_sc.text = "Sekali Beli"
+            tv_scheduled_sc.text = getString(R.string.ly_detailProduk_berlangganan_tidak)
         }
     }
 
     private fun displaystatus() {
         if (transaction.status == "Success"){
-            tv_status_sc.text = "Telah Selesai"
+            tv_status_sc.text = getString(R.string.ly_detailProduk_status_sukses)
         }else {
-            tv_status_sc.text = "Sedang Diproses"
+            tv_status_sc.text = getString(R.string.ly_detailProduk_status_progres)
         }
     }
 

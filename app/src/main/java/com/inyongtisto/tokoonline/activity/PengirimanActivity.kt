@@ -81,7 +81,7 @@ class PengirimanActivity : AppCompatActivity() {
 
         s = SharedPref(this)
 
-        Helper().setToolbar(this, toolbar, "Pengiriman")
+        Helper().setToolbar(this, toolbar, getString(R.string.toolbar_pengiriman))
         myDb = MyDatabase.getInstance(this)!!
 
         createNotificationChannel()
@@ -109,7 +109,7 @@ class PengirimanActivity : AppCompatActivity() {
     @SuppressLint("LongLogTag")
     private fun waktuSpinner() {
         val arrayString = ArrayList<String>()
-        arrayString.add("Pilih Waktu Pengiriman*")
+        arrayString.add(getString(R.string.spiner_delivery_time))
         arrayString.add("Shubuh (04.00-06.00)")
         arrayString.add("Pagi (07.00-09.00)")
         arrayString.add("Siang (12.00-14.00)")
@@ -151,7 +151,7 @@ class PengirimanActivity : AppCompatActivity() {
 
                     if (res.Status == "Success") {
 
-                        arrayString.add("Pilih Sector*")
+                        arrayString.add(getString(R.string.spiner_sector))
 
                         for (sd in res.SectorDetails) {
                             arraySectorDetail.add(sd)
@@ -387,19 +387,19 @@ class PengirimanActivity : AppCompatActivity() {
 
     private fun checkRequire() {
         if (edt_alamat.text.isEmpty()) {
-            edt_alamat.error = "Kolom alamat tidak boleh kosong"
+            edt_alamat.error = getString(R.string.ly_error_edt_alamat)
             edt_alamat.requestFocus()
             return
         } else if (edt_tanggal.text.isEmpty()) {
-            edt_tanggal.error = "Kolom tanggal kirim tidak boleh kosong"
+            edt_tanggal.error = getString(R.string.ly_error_edt_delivery_date)
             edt_tanggal.requestFocus()
             return
         }else if (sectorDetail_Name == "") {
-            text_sector.setError("Area pengiriman  tidak boleh kosong")
+            text_sector.setError(getString(R.string.ly_error_spiner_detail_sector))
             text_sector.requestFocus()
             return
         } else if (getWaktu == "") {
-            text_waktu.setError("Waktu kirim tidak boleh kosong")
+            text_waktu.setError(getString(R.string.ly_error_spiner_delivery_time))
             text_waktu.requestFocus()
             return
         }
@@ -414,7 +414,7 @@ class PengirimanActivity : AppCompatActivity() {
 //        dbClean()
 
         val loading = SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE)
-        loading.setTitleText("Loading...").show()
+        loading.setTitleText(getString(R.string.sweet_alert_loading)).show()
 
         ApiConfig.instanceRetrofit.chekout(chekoutFix).enqueue(object : Callback<ResponModel> {
             override fun onFailure(call: Call<ResponModel>, t: Throwable) {
@@ -479,8 +479,8 @@ class PengirimanActivity : AppCompatActivity() {
 
     private fun createNotificationChannel(){
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            val name = "Asik, pesananmu sedang diproses nih!"
-            val descriptionText = "cek kembali pesananmu dikeranjang agar tidak lupa~"
+            val name = getString(R.string.notif_tittle)
+            val descriptionText = getString(R.string.notif_desc)
             val importance = NotificationManager.IMPORTANCE_DEFAULT
             val channel = NotificationChannel(CHANNEL_ID,name,importance).apply {
                 description = descriptionText
@@ -494,8 +494,8 @@ class PengirimanActivity : AppCompatActivity() {
     private fun sendNotification(){
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.drawable.logo_veganstore)
-            .setContentTitle("Asik, pesananmu sedang diproses nih!")
-            .setContentText("cek kembali pesananmu dikeranjang agar tidak lupa~")
+            .setContentTitle(getString(R.string.notif_tittle))
+            .setContentText(getString(R.string.notif_desc))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
         with(NotificationManagerCompat.from(this)){
             notify(notificationId, builder.build())

@@ -51,7 +51,7 @@ class AdapterHistory( var activity: Activity, var data: ArrayList<Transaction>)
         val name = a.customer_name
         holder.tvNama.text = name
         holder.tvHarga.text = Helper().gantiRupiah(a.total)
-        holder.tvJumlah.text = a.total_item.toString() + " Items"
+        holder.tvJumlah.text = a.total_item.toString() + " Item"
 //        holder.tvStatus.text = a.status
         holder.tvTangal.text = a.created_at
         holder.tvInvoice.text = a.invoice

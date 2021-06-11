@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Keranjang"
+            android:text="@string/fragment_keranjang_tittle"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:fontFamily="@font/poppins_bold"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Select All"
+        android:text="@string/fragment_keranjang_select_all"
         android:fontFamily="@font/poppins_regular"/>
 
     <RelativeLayout
@@ -92,7 +92,7 @@
                 android:background="@drawable/bg_btn_beli"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Bayar"
+                android:text="@string/fragment_keranjang_btn_checkout"
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold"

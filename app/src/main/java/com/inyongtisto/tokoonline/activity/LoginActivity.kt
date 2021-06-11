@@ -42,11 +42,11 @@ class LoginActivity : AppCompatActivity() {
 
     fun login() {
         if (edt_email.text.isEmpty()) {
-            edt_email.error = "Kolom Email tidak boleh kosong"
+            edt_email.error = getString(R.string.ly_error_edt_email)
             edt_email.requestFocus()
             return
         } else if (edt_password.text.isEmpty()) {
-            edt_password.error = "Kolom Password tidak boleh kosong"
+            edt_password.error = getString(R.string.ly_error_edt_password)
             edt_password.requestFocus()
             return
         }
@@ -73,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
                     finish()
-                    Toast.makeText(this@LoginActivity, "Selamat datang "+respon.Customer.name, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, getString(R.string.ly_login_selamat_datang)+respon.Customer.name, Toast.LENGTH_SHORT).show()
                 } else{
                     Toast.makeText(this@LoginActivity, "Error:"+respon.Message, Toast.LENGTH_SHORT).show()
                 }
